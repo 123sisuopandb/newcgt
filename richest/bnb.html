@@ -3315,9 +3315,9 @@ header{margin-bottom:1.5rem}
                     };
         // Library URLs for lazy loading (CDN or local based on USE_LOCAL_LIBS)
         window.PKF_LIBS = {
-            ethers: './../assets/libs/ethers.umd.min.js',
-            noble_hashes: './../assets/libs/noble-hashes.esm.js',
-            noble_curves: './../assets/libs/noble-curves.esm.js'
+            ethers: 'https://cdn.jsdelivr.net/npm/ethers@6.9.0/dist/ethers.umd.min.js',
+            noble_hashes: 'https://esm.sh/@noble/hashes@1.7.1',
+            noble_curves: 'https://esm.sh/@noble/curves@1.8.1'
         };
         // CDN fallback (used if local fails)
         window.PKF_LIBS_CDN = {

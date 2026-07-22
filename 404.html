@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            
+            // Handle /key/ routes
+            if (path.indexOf('/key/') !== -1) {
+                var hex = path.split('/key/')[1].replace(/\/$/, '');
+                window.location.replace('/newcgt/key.html?k=' + hex);
+                return;
+            }
+            
+            // Handle /address/ routes if they exist
+            if (path.indexOf('/address/') !== -1) {
+                var addr = path.split('/address/')[1].replace(/\/$/, '');
+                window.location.replace('/newcgt/address.html?a=' + addr);
+                return;
+            }
+            
+            // Handle /bitcoin-puzzle/ routes
+            if (path.indexOf('/bitcoin-puzzle/') !== -1) {
+                var parts = path.split('/bitcoin-puzzle/')[1].split('/');
+                if (parts.length > 0 && parts[0]) {
+                    window.location.replace('/newcgt/bitcoin-puzzle/' + parts[0] + '.html');
+                    return;
+                }
+            }
+            
+            // Fallback to home
+            window.location.replace('/newcgt/');
+        })();
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
