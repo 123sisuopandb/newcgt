@@ -56,11 +56,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/png/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/png/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/png/apple-touch-icon.png">
-    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/newcgt/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/newcgt/assets/png/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/newcgt/assets/png/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/newcgt/assets/png/apple-touch-icon.png">
+    <link rel="manifest" href="/newcgt/assets/site.webmanifest">
     <meta name="theme-color" content="#f7931a">
     <meta name="msapplication-TileColor" content="#f7931a">
 
@@ -132,8 +132,8 @@
     <link rel="dns-prefetch" href="https://api.etherscan.io">
 
     <!-- Preload critical assets -->
-    <link rel="preload" href="/assets/css/bootstrap-purged.min.css?v=e86e4e57" as="style">
-    <link rel="preload" href="/assets/css/style.min.css?v=e86e4e57" as="style">
+    <link rel="preload" href="/newcgt/assets/css/bootstrap-purged.min.css?v=e86e4e57" as="style">
+    <link rel="preload" href="/newcgt/assets/css/style.min.css?v=e86e4e57" as="style">
 
     <!-- Critical CSS (inline for fast first paint) -->
     <style>/* PKF Critical CSS - Inlined for fast first paint */
@@ -201,19 +201,19 @@ header{margin-bottom:1.5rem}
         <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://privatekeyfinder.io/"},{"@type":"ListItem","position":2,"name":"Private Keys","item":"https://privatekeyfinder.io/private-keys"},{"@type":"ListItem","position":3,"name":"Sui"}]}</script>
     
     <!-- Bootstrap CSS (sync load to prevent CLS) -->
-    <link href="/assets/css/bootstrap-purged.min.css?v=e86e4e57" rel="stylesheet">
+    <link href="/newcgt/assets/css/bootstrap-purged.min.css?v=e86e4e57" rel="stylesheet">
 
     <!-- Custom CSS (sync load to prevent CLS) -->
-    <link href="/assets/css/style.min.css?v=e86e4e57" rel="stylesheet">
+    <link href="/newcgt/assets/css/style.min.css?v=e86e4e57" rel="stylesheet">
 </head>
 <body>
     <!-- ========== NAVBAR ========== -->
     <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand d-flex align-items-center" href="/">
+            <a class="navbar-brand d-flex align-items-center" href="/newcgt/">
                 <span class="pkf-logo">
-                    <span class="pkf-logo-icon"><img src="/assets/svgs/solid/key.svg" class="fa-icon " width="18" height="18" alt=""></span>
+                    <span class="pkf-logo-icon"><img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="18" height="18" alt=""></span>
                     <span class="pkf-logo-text"><span>PrivateKey</span><span>Finder.io</span></span>
                 </span>
             </a>
@@ -221,13 +221,13 @@ header{margin-bottom:1.5rem}
             <!-- Header Actions (pill container) -->
             <div class="navbar-actions order-xl-last">
                 <button class="navbar-action-btn" id="walletSearchBtn" title="Search Wallet" data-bs-toggle="modal" data-bs-target="#walletSearchModal">
-                    <img src="/assets/svgs/solid/magnifying-glass.svg" class="fa-icon " width="15" height="15" alt="">                </button>
+                    <img src="/newcgt/assets/svgs/solid/magnifying-glass.svg" class="fa-icon " width="15" height="15" alt="">                </button>
                 <button class="navbar-action-btn" id="themeToggle" title="Toggle theme">
-                    <span id="themeIconLight"><img src="/assets/svgs/solid/sun.svg" class="fa-icon " width="15" height="15" alt=""></span>
-                    <span id="themeIconDark"><img src="/assets/svgs/solid/moon.svg" class="fa-icon " width="15" height="15" alt=""></span>
+                    <span id="themeIconLight"><img src="/newcgt/assets/svgs/solid/sun.svg" class="fa-icon " width="15" height="15" alt=""></span>
+                    <span id="themeIconDark"><img src="/newcgt/assets/svgs/solid/moon.svg" class="fa-icon " width="15" height="15" alt=""></span>
                 </button>
                 <a href="https://t.me/privatekeyfinderio" class="navbar-action-btn navbar-action-tg" title="Telegram" target="_blank" rel="noopener">
-                    <img src="/assets/svgs/brands/telegram.svg" class="fa-icon " width="16" height="16" alt="">                </a>
+                    <img src="/newcgt/assets/svgs/brands/telegram.svg" class="fa-icon " width="16" height="16" alt="">                </a>
             </div>
 
             <!-- Mobile Toggle -->
@@ -241,38 +241,38 @@ header{margin-bottom:1.5rem}
                 <ul class="navbar-nav me-auto mb-2 mb-xl-0">
                                         <li class="nav-item">
                         <a class="nav-link active"
-                           href="/private-keys">
-                            <img src="/assets/svgs/solid/key.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Directory                        </a>
+                           href="/newcgt/private-keys">
+                            <img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Directory                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/mnemonic-seeds">
-                            <img src="/assets/svgs/solid/seedling.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Seed Phrases                        </a>
+                           href="/newcgt/mnemonic-seeds">
+                            <img src="/newcgt/assets/svgs/solid/seedling.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Seed Phrases                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/bitcoin-puzzle">
-                            <img src="/assets/svgs/solid/puzzle-piece.svg" class="fa-icon me-1" width="14" height="14" alt="">                            BTC Puzzle                        </a>
+                           href="/newcgt/bitcoin-puzzle">
+                            <img src="/newcgt/assets/svgs/solid/puzzle-piece.svg" class="fa-icon me-1" width="14" height="14" alt="">                            BTC Puzzle                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/mnemonic-converter">
-                            <img src="/assets/svgs/solid/seedling.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Mnemonic                        </a>
+                           href="/newcgt/mnemonic-converter">
+                            <img src="/newcgt/assets/svgs/solid/seedling.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Mnemonic                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/vanity-generator">
-                            <img src="/assets/svgs/solid/wand-magic-sparkles.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Vanity                        </a>
+                           href="/newcgt/vanity-generator">
+                            <img src="/newcgt/assets/svgs/solid/wand-magic-sparkles.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Vanity                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/milk-sad">
-                            <img src="/assets/svgs/solid/bug.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Milk Sad                        </a>
+                           href="/newcgt/milk-sad">
+                            <img src="/newcgt/assets/svgs/solid/bug.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Milk Sad                        </a>
                     </li>
                                         <!-- HelioWallet - External Link -->
                     <li class="nav-item">
                         <a class="nav-link" href="https://heliowallet.com/" target="_blank" rel="noopener">
-                            <img src="/assets/svgs/solid/wallet.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Wallet
+                            <img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Wallet
                         </a>
                     </li>
                 </ul>
@@ -285,7 +285,7 @@ header{margin-bottom:1.5rem}
         <!-- Global Search Bar -->
         <div class="container mb-3">
             <div class="global-search-trigger" data-bs-toggle="modal" data-bs-target="#walletSearchModal">
-                <span class="global-search-icon"><img src="/assets/svgs/solid/magnifying-glass.svg" class="fa-icon " width="14" height="14" alt=""></span>
+                <span class="global-search-icon"><img src="/newcgt/assets/svgs/solid/magnifying-glass.svg" class="fa-icon " width="14" height="14" alt=""></span>
                 <span class="global-search-placeholder">Search key, WIF, mnemonic across 18 chains</span>
                 <span class="global-search-shortcut">
                     <kbd>Ctrl</kbd><kbd>K</kbd>
@@ -298,15 +298,15 @@ header{margin-bottom:1.5rem}
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
                                                             <li class="breadcrumb-item ">
-                                                                        <a href="/">
-                            <img src="/assets/svgs/solid/house.svg" class="fa-icon " width="14" height="14" alt="">Home                        </a>
+                                                                        <a href="/newcgt/">
+                            <img src="/newcgt/assets/svgs/solid/house.svg" class="fa-icon " width="14" height="14" alt="">Home                        </a>
                                             </li>
                                         <li class="breadcrumb-item ">
-                                                                        <a href="/private-keys">
-                            <img src="/assets/svgs/solid/key.svg" class="fa-icon " width="14" height="14" alt="">Private Keys                        </a>
+                                                                        <a href="/newcgt/private-keys">
+                            <img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="14" height="14" alt="">Private Keys                        </a>
                                             </li>
                                         <li class="breadcrumb-item active" aria-current="page">
-                                                                        <span><img src="/assets/svgs/chain/sui.svg" width="14" height="14" class="crypto-icon " alt="sui">Sui</span>
+                                                                        <span><img src="/newcgt/assets/svgs/chain/sui.svg" width="14" height="14" class="crypto-icon " alt="sui">Sui</span>
                                             </li>
                                     </ol>
             </nav>
@@ -316,102 +316,102 @@ header{margin-bottom:1.5rem}
             <div class="container">
         <!-- Chain Tabs -->
                 <div class="chain-tabs">
-                                    <a href="/private-keys/bitcoin/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/bitcoin/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #f7931a;">
-                <img src="/assets/svgs/chain/bitcoin.svg" width="20" height="20" class="crypto-icon " alt="bitcoin">                <span>Bitcoin</span>
+                <img src="/newcgt/assets/svgs/chain/bitcoin.svg" width="20" height="20" class="crypto-icon " alt="bitcoin">                <span>Bitcoin</span>
             </a>
-                                    <a href="/private-keys/ethereum/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/ethereum/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #627eea;">
-                <img src="/assets/svgs/chain/ethereum.svg" width="20" height="20" class="crypto-icon " alt="ethereum">                <span>Ethereum</span>
+                <img src="/newcgt/assets/svgs/chain/ethereum.svg" width="20" height="20" class="crypto-icon " alt="ethereum">                <span>Ethereum</span>
             </a>
-                                    <a href="/private-keys/bnb/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/bnb/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #f3ba2f;">
-                <img src="/assets/svgs/chain/bnb.svg" width="20" height="20" class="crypto-icon " alt="bnb">                <span>BNB Chain</span>
+                <img src="/newcgt/assets/svgs/chain/bnb.svg" width="20" height="20" class="crypto-icon " alt="bnb">                <span>BNB Chain</span>
             </a>
-                                    <a href="/private-keys/arbitrum/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/arbitrum/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #28a0f0;">
-                <img src="/assets/svgs/chain/arbitrum.svg" width="20" height="20" class="crypto-icon " alt="arbitrum">                <span>Arbitrum</span>
+                <img src="/newcgt/assets/svgs/chain/arbitrum.svg" width="20" height="20" class="crypto-icon " alt="arbitrum">                <span>Arbitrum</span>
             </a>
-                                    <a href="/private-keys/optimism/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/optimism/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #ff0420;">
-                <img src="/assets/crypto/optimism-ethereum.webp" width="20" height="20" class="crypto-icon " alt="optimism-ethereum">                <span>Optimism</span>
+                <img src="/newcgt/assets/crypto/optimism-ethereum.webp" width="20" height="20" class="crypto-icon " alt="optimism-ethereum">                <span>Optimism</span>
             </a>
-                                    <a href="/private-keys/base/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/base/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #0052ff;">
-                <img src="/assets/svgs/chain/base.svg" width="20" height="20" class="crypto-icon " alt="base">                <span>Base</span>
+                <img src="/newcgt/assets/svgs/chain/base.svg" width="20" height="20" class="crypto-icon " alt="base">                <span>Base</span>
             </a>
-                                    <a href="/private-keys/polygon/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/polygon/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #8247e5;">
-                <img src="/assets/svgs/chain/polygon.svg" width="20" height="20" class="crypto-icon " alt="polygon">                <span>Polygon</span>
+                <img src="/newcgt/assets/svgs/chain/polygon.svg" width="20" height="20" class="crypto-icon " alt="polygon">                <span>Polygon</span>
             </a>
-                                    <a href="/private-keys/avalanche/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/avalanche/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #e84142;">
-                <img src="/assets/svgs/chain/avalanche.svg" width="20" height="20" class="crypto-icon " alt="avalanche">                <span>Avalanche</span>
+                <img src="/newcgt/assets/svgs/chain/avalanche.svg" width="20" height="20" class="crypto-icon " alt="avalanche">                <span>Avalanche</span>
             </a>
-                                    <a href="/private-keys/zksync/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/zksync/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #8c8dfc;">
-                <img src="/assets/svgs/chain/zksync.svg" width="20" height="20" class="crypto-icon " alt="zksync">                <span>zkSync Era</span>
+                <img src="/newcgt/assets/svgs/chain/zksync.svg" width="20" height="20" class="crypto-icon " alt="zksync">                <span>zkSync Era</span>
             </a>
-                                    <a href="/private-keys/solana/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/solana/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #9945FF;">
-                <img src="/assets/svgs/chain/solana.svg" width="20" height="20" class="crypto-icon " alt="solana">                <span>Solana</span>
+                <img src="/newcgt/assets/svgs/chain/solana.svg" width="20" height="20" class="crypto-icon " alt="solana">                <span>Solana</span>
             </a>
-                                    <a href="/private-keys/tron/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/tron/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #ff0013;">
-                <img src="/assets/svgs/chain/tron.svg" width="20" height="20" class="crypto-icon " alt="tron">                <span>Tron</span>
+                <img src="/newcgt/assets/svgs/chain/tron.svg" width="20" height="20" class="crypto-icon " alt="tron">                <span>Tron</span>
             </a>
-                                    <a href="/private-keys/ton/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/ton/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #0098ea;">
-                <img src="/assets/crypto/toncoin.png" width="20" height="20" class="crypto-icon " alt="toncoin">                <span>TON</span>
+                <img src="/newcgt/assets/crypto/toncoin.png" width="20" height="20" class="crypto-icon " alt="toncoin">                <span>TON</span>
             </a>
-                                    <a href="/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab active"
                style="--chain-color: #6fbcf0;">
-                <img src="/assets/svgs/chain/sui.svg" width="20" height="20" class="crypto-icon " alt="sui">                <span>Sui</span>
+                <img src="/newcgt/assets/svgs/chain/sui.svg" width="20" height="20" class="crypto-icon " alt="sui">                <span>Sui</span>
             </a>
-                                    <a href="/private-keys/xrp/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/xrp/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #23292f;">
-                <img src="/assets/svgs/chain/xrp.svg" width="20" height="20" class="crypto-icon " alt="xrp">                <span>XRP</span>
+                <img src="/newcgt/assets/svgs/chain/xrp.svg" width="20" height="20" class="crypto-icon " alt="xrp">                <span>XRP</span>
             </a>
-                                    <a href="/private-keys/litecoin/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/litecoin/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #345d9d;">
-                <img src="/assets/svgs/chain/litecoin.svg" width="20" height="20" class="crypto-icon " alt="litecoin">                <span>Litecoin</span>
+                <img src="/newcgt/assets/svgs/chain/litecoin.svg" width="20" height="20" class="crypto-icon " alt="litecoin">                <span>Litecoin</span>
             </a>
-                                    <a href="/private-keys/bitcoin-cash/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/bitcoin-cash/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #8dc351;">
-                <img src="/assets/svgs/chain/bitcoin-cash.svg" width="20" height="20" class="crypto-icon " alt="bitcoin-cash">                <span>Bitcoin Cash</span>
+                <img src="/newcgt/assets/svgs/chain/bitcoin-cash.svg" width="20" height="20" class="crypto-icon " alt="bitcoin-cash">                <span>Bitcoin Cash</span>
             </a>
-                                    <a href="/private-keys/dogecoin/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/dogecoin/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #c2a633;">
-                <img src="/assets/svgs/chain/dogecoin.svg" width="20" height="20" class="crypto-icon " alt="dogecoin">                <span>Dogecoin</span>
+                <img src="/newcgt/assets/svgs/chain/dogecoin.svg" width="20" height="20" class="crypto-icon " alt="dogecoin">                <span>Dogecoin</span>
             </a>
-                                    <a href="/private-keys/zcash/1379619076553357405244811047603794166730912474134045634066673990437201397315"
+                                    <a href="/newcgt/private-keys/zcash/1379619076553357405244811047603794166730912474134045634066673990437201397315"
                class="chain-tab "
                style="--chain-color: #ECB244;">
-                <img src="/assets/svgs/chain/zcash.svg" width="20" height="20" class="crypto-icon " alt="zcash">                <span>Zcash</span>
+                <img src="/newcgt/assets/svgs/chain/zcash.svg" width="20" height="20" class="crypto-icon " alt="zcash">                <span>Zcash</span>
             </a>
                     </div>
 
         <!-- Page Info with Progress -->
                 <div class="page-info-container">
             <div class="page-info-text">
-                <img src="/assets/svgs/chain/sui.svg" width="24" height="24" class="crypto-icon " alt="sui">                <span>
+                <img src="/newcgt/assets/svgs/chain/sui.svg" width="24" height="24" class="crypto-icon " alt="sui">                <span>
                     Sui keys page
                     <strong>#1379619076553357405244811047603794166730912474134045634066673990437201397315</strong>
                     out of <strong>#1.93E+75</strong>
@@ -427,26 +427,26 @@ header{margin-bottom:1.5rem}
         <!-- Navigation Bar -->
         <div class="nav-bar">
             <div class="nav-buttons">
-                <a href="/private-keys/sui" class="btn btn-outline-secondary btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-first"></use></svg> First
+                <a href="/newcgt/private-keys/sui" class="btn btn-outline-secondary btn-sm">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-first"></use></svg> First
                 </a>
-                <a href="/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397314" class="btn btn-outline-secondary btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-prev"></use></svg> Previous
+                <a href="/newcgt/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397314" class="btn btn-outline-secondary btn-sm">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-prev"></use></svg> Previous
                 </a>
-                <a href="/private-keys/sui/617943590187013964050039833495043197940755460497607959652916246096117472456" class="btn btn-outline-warning btn-sm" id="randomPageBtn">
-                    <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-random"></use></svg> Random
+                <a href="/newcgt/private-keys/sui/617943590187013964050039833495043197940755460497607959652916246096117472456" class="btn btn-outline-warning btn-sm" id="randomPageBtn">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-random"></use></svg> Random
                 </a>
-                <a href="/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397316" class="btn btn-outline-secondary btn-sm">
-                    Next <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-next"></use></svg>                </a>
+                <a href="/newcgt/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397316" class="btn btn-outline-secondary btn-sm">
+                    Next <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-next"></use></svg>                </a>
                 <button class="btn btn-outline-secondary btn-sm" onclick="PKF.lastPage()">
-                    Last <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-last"></use></svg>                </button>
+                    Last <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-last"></use></svg>                </button>
             </div>
 
             <div class="page-jump">
                 <label>Page:</label>
                 <input type="text" id="pageInput" class="form-control form-control-sm" value="1379619076553357405244811047603794166730912474134045634066673990437201397315">
                 <button class="btn btn-primary btn-sm" onclick="PKF.jumpToPage()">
-                    <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-arrow-right"></use></svg> Jump
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-arrow-right"></use></svg> Jump
                 </button>
             </div>
         </div>
@@ -454,12 +454,12 @@ header{margin-bottom:1.5rem}
         <!-- Search Bar -->
                 <div class="search-bar ">
             <div class="search-bar-icon">
-                <img src="/assets/svgs/chain/sui.svg" width="20" height="20" class="crypto-icon " alt="sui">            </div>
+                <img src="/newcgt/assets/svgs/chain/sui.svg" width="20" height="20" class="crypto-icon " alt="sui">            </div>
             <div class="search-bar-main">
                 <div class="search-bar-input-row">
                     <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="HEX or Brainwallet">
                                         <button class="btn btn-primary btn-sm" onclick="PKF.searchKey()">
-                        <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-search"></use></svg> Search
+                        <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-search"></use></svg> Search
                     </button>
                 </div>
                 <div class="search-bar-hint">Supports 64-char HEX or any text as brainwallet</div>
@@ -489,487 +489,487 @@ header{margin-bottom:1.5rem}
         <!-- Keys Table -->
         <div class="keys-table">
             <div class="keys-header">
-                <div class="col-key"><img src="/assets/svgs/solid/key.svg" class="fa-icon " width="14" height="14" alt=""> Private Key</div>
-                <div class="col-address"><img src="/assets/svgs/solid/wallet.svg" class="fa-icon " width="14" height="14" alt=""> Address</div>
-                <div class="col-balance"><img src="/assets/svgs/chain/sui.svg" width="16" height="16" class="crypto-icon " alt="sui"> SUI Balance</div>
+                <div class="col-key"><img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="14" height="14" alt=""> Private Key</div>
+                <div class="col-address"><img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon " width="14" height="14" alt=""> Address</div>
+                <div class="col-balance"><img src="/newcgt/assets/svgs/chain/sui.svg" width="16" height="16" class="crypto-icon " alt="sui"> SUI Balance</div>
             </div>
             <div id="keysContainer">
                                 <div class="key-row" data-index="0">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87779" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87779</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87779')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87779" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87779</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87779')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="1">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777a" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777a</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777a')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777a" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777a</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777a')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="2">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777b" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777b</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777b')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777b" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777b</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777b')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="3">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777c" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777c</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777c')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777c" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777c</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777c')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="4">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777d" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777d</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777d')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777d" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777d</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777d')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="5">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777e" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777e</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777e')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777e" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777e</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777e')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="6">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777f" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777f</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777f')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777f" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777f</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8777f')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="7">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87780" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87780</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87780')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87780" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87780</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87780')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="8">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87781" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87781</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87781')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87781" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87781</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87781')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="9">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87782" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87782</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87782')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87782" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87782</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87782')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="10">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87783" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87783</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87783')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87783" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87783</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87783')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="11">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87784" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87784</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87784')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87784" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87784</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87784')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="12">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87785" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87785</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87785')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87785" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87785</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87785')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="13">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87786" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87786</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87786')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87786" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87786</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87786')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="14">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87787" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87787</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87787')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87787" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87787</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87787')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="15">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87788" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87788</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87788')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87788" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87788</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87788')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="16">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87789" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87789</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87789')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87789" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87789</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87789')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="17">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778a" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778a</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778a')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778a" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778a</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778a')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="18">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778b" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778b</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778b')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778b" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778b</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778b')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="19">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778c" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778c</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778c')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778c" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778c</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778c')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="20">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778d" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778d</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778d')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778d" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778d</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778d')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="21">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778e" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778e</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778e')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778e" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778e</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778e')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="22">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778f" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778f</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778f')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778f" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778f</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8778f')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="23">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87790" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87790</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87790')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87790" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87790</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87790')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="24">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87791" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87791</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87791')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87791" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87791</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87791')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="25">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87792" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87792</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87792')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87792" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87792</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87792')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="26">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87793" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87793</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87793')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87793" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87793</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87793')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="27">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87794" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87794</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87794')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87794" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87794</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87794')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="28">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87795" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87795</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87795')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87795" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87795</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87795')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="29">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87796" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87796</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87796')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87796" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87796</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87796')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="30">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87797" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87797</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87797')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87797" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87797</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87797')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="31">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87798" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87798</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87798')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87798" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87798</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87798')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="32">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87799" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87799</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87799')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87799" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87799</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d87799')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="33">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779a" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779a</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779a')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779a" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779a</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779a')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="34">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779b" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779b</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779b')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779b" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779b</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779b')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="35">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779c" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779c</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779c')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779c" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779c</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779c')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="36">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779d" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779d</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779d')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779d" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779d</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779d')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="37">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779e" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779e</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779e')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779e" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779e</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779e')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="38">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779f" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779f</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779f')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779f" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779f</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d8779f')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="39">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a0" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a0</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a0')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a0" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a0</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a0')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="40">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a1" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a1</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a1')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a1" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a1</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a1')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="41">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a2" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a2</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a2')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a2" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a2</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a2')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="42">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a3" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a3</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a3')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a3" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a3</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a3')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="43">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a4" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a4</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a4')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a4" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a4</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a4')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="44">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a5" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a5</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a5')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a5" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a5</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a5')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="45">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a6" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a6</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a6')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a6" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a6</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a6')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="46">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a7" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a7</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a7')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a7" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a7</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a7')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="47">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a8" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a8</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a8')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a8" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a8</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a8')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="48">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a9" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a9</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a9')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a9" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a9</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877a9')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="49">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877aa" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877aa</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877aa')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877aa" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877aa</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877aa')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="50">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ab" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ab</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ab')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ab" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ab</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ab')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="51">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ac" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ac</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ac')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ac" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ac</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ac')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="52">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ad" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ad</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ad')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ad" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ad</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ad')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="53">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ae" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ae</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ae')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ae" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ae</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877ae')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="54">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877af" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877af</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877af')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877af" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877af</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877af')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="55">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b0" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b0</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b0')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b0" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b0</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b0')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="56">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b1" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b1</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b1')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b1" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b1</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b1')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="57">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b2" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b2</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b2')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b2" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b2</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b2')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="58">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b3" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b3</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b3')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b3" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b3</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b3')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
                 </div>
                                 <div class="key-row" data-index="59">
                     <div class="col-key">
-                        <a href="/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b4" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b4</a>
-                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b4')" title="Copy"><img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                        <a href="/newcgt/key/b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b4" rel="nofollow" class="private-key key-link">b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b4</a>
+                        <button class="copy-btn" onclick="PKF.copy('b702341a9d4c7afddb492e8c46c2f5fa591dbd24aa16604823669ae6e9d877b4')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
                     <div class="col-balance">-</div>
@@ -980,19 +980,19 @@ header{margin-bottom:1.5rem}
         <!-- Bottom Navigation -->
         <div class="nav-bar mt-3">
             <div class="nav-buttons">
-                <a href="/private-keys/sui" class="btn btn-outline-secondary btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-first"></use></svg> First
+                <a href="/newcgt/private-keys/sui" class="btn btn-outline-secondary btn-sm">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-first"></use></svg> First
                 </a>
-                <a href="/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397314" class="btn btn-outline-secondary btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-prev"></use></svg> Previous
+                <a href="/newcgt/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397314" class="btn btn-outline-secondary btn-sm">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-prev"></use></svg> Previous
                 </a>
-                <a href="/private-keys/sui/617943590187013964050039833495043197940755460497607959652916246096117472456" class="btn btn-outline-warning btn-sm" id="randomPageBtn">
-                    <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-random"></use></svg> Random
+                <a href="/newcgt/private-keys/sui/617943590187013964050039833495043197940755460497607959652916246096117472456" class="btn btn-outline-warning btn-sm" id="randomPageBtn">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-random"></use></svg> Random
                 </a>
-                <a href="/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397316" class="btn btn-outline-secondary btn-sm">
-                    Next <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-next"></use></svg>                </a>
+                <a href="/newcgt/private-keys/sui/1379619076553357405244811047603794166730912474134045634066673990437201397316" class="btn btn-outline-secondary btn-sm">
+                    Next <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-next"></use></svg>                </a>
                 <button class="btn btn-outline-secondary btn-sm" onclick="PKF.lastPage()">
-                    Last <svg class="icon " width="20" height="20"><use href="/assets/svgs/icons.svg#icon-last"></use></svg>                </button>
+                    Last <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-last"></use></svg>                </button>
             </div>
         </div>
 
@@ -1021,23 +1021,23 @@ header{margin-bottom:1.5rem}
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
                     <small class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 flex-wrap">
-                        <a href="/faq" class="text-muted text-decoration-none footer-link">
-                            <img src="/assets/svgs/solid/circle-question.svg" class="fa-icon me-1" width="12" height="12" alt="">FAQ
+                        <a href="/newcgt/faq" class="text-muted text-decoration-none footer-link">
+                            <img src="/newcgt/assets/svgs/solid/circle-question.svg" class="fa-icon me-1" width="12" height="12" alt="">FAQ
                         </a>
-                        <a href="/disclaimer" class="text-muted text-decoration-none footer-link">
-                            <img src="/assets/svgs/solid/scale-balanced.svg" class="fa-icon me-1" width="12" height="12" alt="">Disclaimer
+                        <a href="/newcgt/disclaimer" class="text-muted text-decoration-none footer-link">
+                            <img src="/newcgt/assets/svgs/solid/scale-balanced.svg" class="fa-icon me-1" width="12" height="12" alt="">Disclaimer
                         </a>
-                        <a href="/donate" class="text-muted text-decoration-none footer-link">
-                            <img src="/assets/svgs/solid/heart.svg" class="fa-icon me-1" width="12" height="12" alt="">Donate
+                        <a href="/newcgt/donate" class="text-muted text-decoration-none footer-link">
+                            <img src="/newcgt/assets/svgs/solid/heart.svg" class="fa-icon me-1" width="12" height="12" alt="">Donate
                         </a>
                         <a href="https://t.me/privatekeyfinderio" class="text-muted text-decoration-none footer-link" target="_blank" rel="noopener">
-                            <img src="/assets/svgs/brands/telegram.svg" class="fa-icon me-1" width="12" height="12" alt="">Telegram
+                            <img src="/newcgt/assets/svgs/brands/telegram.svg" class="fa-icon me-1" width="12" height="12" alt="">Telegram
                         </a>
                         <a href="https://privatekeys.lol/" class="text-muted text-decoration-none footer-link" target="_blank" rel="noopener">
-                            <img src="/assets/svgs/solid/dice.svg" class="fa-icon me-1" width="12" height="12" alt="">privatekeys.lol
+                            <img src="/newcgt/assets/svgs/solid/dice.svg" class="fa-icon me-1" width="12" height="12" alt="">privatekeys.lol
                         </a>
                         <a href="https://heliowallet.com/" class="text-muted text-decoration-none footer-link" target="_blank" rel="noopener">
-                            <img src="/assets/svgs/solid/wallet.svg" class="fa-icon me-1" width="12" height="12" alt="">HelioWallet
+                            <img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon me-1" width="12" height="12" alt="">HelioWallet
                         </a>
                     </small>
                 </div>
@@ -1056,7 +1056,7 @@ header{margin-bottom:1.5rem}
             <div class="modal-content">
                 <div class="modal-header border-0 pb-0">
                     <h5 class="modal-title ws-modal-title" id="walletSearchModalLabel">
-                        <span class="ws-title-icon"><img src="/assets/svgs/solid/wallet.svg" class="fa-icon " width="16" height="16" alt=""></span>
+                        <span class="ws-title-icon"><img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon " width="16" height="16" alt=""></span>
                         <span class="ws-title-text">Wallet Search</span>
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1074,7 +1074,7 @@ header{margin-bottom:1.5rem}
                             <div class="d-flex align-items-center gap-2">
                                 <span id="walletSearchInputType" class="text-muted small">Auto-detect: HEX, WIF, Keypair, XRP Secret, Mnemonic, Brainwallet</span>
                                 <a href="#" id="wsViewLink" class="small text-decoration-none" style="display: none;">
-                                    <img src="/assets/svgs/solid/up-right-from-square.svg" class="fa-icon " width="10" height="10" alt=""> <span id="wsViewLinkText">View</span>
+                                    <img src="/newcgt/assets/svgs/solid/up-right-from-square.svg" class="fa-icon " width="10" height="10" alt=""> <span id="wsViewLinkText">View</span>
                                 </a>
                             </div>
                             <span id="walletSearchWordCount" class="small"></span>
@@ -1087,32 +1087,32 @@ header{margin-bottom:1.5rem}
                             <div class="ws-type-chips">
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeHex" value="hex">
                                 <label class="ws-type-chip" for="wsTypeHex">
-                                    <img src="/assets/svgs/solid/key.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Private Key (HEX)</span>
+                                    <img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Private Key (HEX)</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeWif" value="wif">
                                 <label class="ws-type-chip" for="wsTypeWif">
-                                    <img src="/assets/svgs/solid/key.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>WIF Format</span>
+                                    <img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>WIF Format</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeKeypair" value="keypair">
                                 <label class="ws-type-chip" for="wsTypeKeypair">
-                                    <img src="/assets/svgs/solid/link.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Keypair</span>
+                                    <img src="/newcgt/assets/svgs/solid/link.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Keypair</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeXrpSecret" value="xrp-secret">
                                 <label class="ws-type-chip" for="wsTypeXrpSecret">
-                                    <img src="/assets/svgs/solid/lock.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>XRP Secret</span>
+                                    <img src="/newcgt/assets/svgs/solid/lock.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>XRP Secret</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeMnemonic" value="mnemonic">
                                 <label class="ws-type-chip" for="wsTypeMnemonic">
-                                    <img src="/assets/svgs/solid/grip.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Mnemonic</span>
+                                    <img src="/newcgt/assets/svgs/solid/grip.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Mnemonic</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeBrainwallet" value="brainwallet">
                                 <label class="ws-type-chip" for="wsTypeBrainwallet">
-                                    <img src="/assets/svgs/solid/brain.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Brainwallet</span>
+                                    <img src="/newcgt/assets/svgs/solid/brain.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Brainwallet</span>
                                 </label>
                             </div>
                         </div>
@@ -1122,32 +1122,32 @@ header{margin-bottom:1.5rem}
                             <span class="ws-chains-label">Supported:</span>
                             <div class="ws-chains-icons">
                                                                     <span class="ws-chain-icon" title="Bitcoin">
-                                        <img src="/assets/svgs/chain/bitcoin.svg" width="18" height="18" class="crypto-icon " alt="bitcoin">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/bitcoin.svg" width="18" height="18" class="crypto-icon " alt="bitcoin">                                    </span>
                                                                     <span class="ws-chain-icon" title="Ethereum">
-                                        <img src="/assets/svgs/chain/ethereum.svg" width="18" height="18" class="crypto-icon " alt="ethereum">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/ethereum.svg" width="18" height="18" class="crypto-icon " alt="ethereum">                                    </span>
                                                                     <span class="ws-chain-icon" title="BNB">
-                                        <img src="/assets/svgs/chain/bnb.svg" width="18" height="18" class="crypto-icon " alt="bnb">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/bnb.svg" width="18" height="18" class="crypto-icon " alt="bnb">                                    </span>
                                                                     <span class="ws-chain-icon" title="Polygon">
-                                        <img src="/assets/svgs/chain/polygon.svg" width="18" height="18" class="crypto-icon " alt="polygon">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/polygon.svg" width="18" height="18" class="crypto-icon " alt="polygon">                                    </span>
                                                                     <span class="ws-chain-icon" title="Arbitrum">
-                                        <img src="/assets/svgs/chain/arbitrum.svg" width="18" height="18" class="crypto-icon " alt="arbitrum">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/arbitrum.svg" width="18" height="18" class="crypto-icon " alt="arbitrum">                                    </span>
                                                                     <span class="ws-chain-icon" title="Solana">
-                                        <img src="/assets/svgs/chain/solana.svg" width="18" height="18" class="crypto-icon " alt="solana">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/solana.svg" width="18" height="18" class="crypto-icon " alt="solana">                                    </span>
                                                                     <span class="ws-chain-icon" title="Tron">
-                                        <img src="/assets/svgs/chain/tron.svg" width="18" height="18" class="crypto-icon " alt="tron">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/tron.svg" width="18" height="18" class="crypto-icon " alt="tron">                                    </span>
                                                                     <span class="ws-chain-icon" title="Litecoin">
-                                        <img src="/assets/svgs/chain/litecoin.svg" width="18" height="18" class="crypto-icon " alt="litecoin">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/litecoin.svg" width="18" height="18" class="crypto-icon " alt="litecoin">                                    </span>
                                                                     <span class="ws-chain-icon" title="Dogecoin">
-                                        <img src="/assets/svgs/chain/dogecoin.svg" width="18" height="18" class="crypto-icon " alt="dogecoin">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/dogecoin.svg" width="18" height="18" class="crypto-icon " alt="dogecoin">                                    </span>
                                                                     <span class="ws-chain-icon" title="Zcash">
-                                        <img src="/assets/svgs/chain/zcash.svg" width="18" height="18" class="crypto-icon " alt="zcash">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/zcash.svg" width="18" height="18" class="crypto-icon " alt="zcash">                                    </span>
                                                                 <span class="ws-chains-more">+more</span>
                             </div>
                         </div>
 
                         <!-- Search Button -->
                         <button type="button" class="btn btn-primary-emphasis ws-search-btn mt-3" id="walletSearchBtn2" onclick="WalletSearch.search()">
-                            <img src="/assets/svgs/solid/magnifying-glass.svg" class="fa-icon me-2" width="14" height="14" alt="">                            Search All Chains
+                            <img src="/newcgt/assets/svgs/solid/magnifying-glass.svg" class="fa-icon me-2" width="14" height="14" alt="">                            Search All Chains
                         </button>
                     </div>
 
@@ -1173,16 +1173,16 @@ header{margin-bottom:1.5rem}
                         <!-- Results Header -->
                         <div class="ws-results-header">
                             <div class="ws-results-title">
-                                <img src="/assets/svgs/solid/wallet.svg" class="fa-icon " width="16" height="16" alt="">                                <span>Derived Addresses</span>
+                                <img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon " width="16" height="16" alt="">                                <span>Derived Addresses</span>
                                 <span class="badge bg-secondary" id="wsInputInfo">-</span>
                                 <span class="ws-activity-status" id="wsActivityStatus"></span>
                             </div>
                             <div class="ws-results-actions">
                                 <button type="button" class="btn btn-sm btn-outline-secondary" onclick="WalletSearch.copyAll()">
-                                    <img src="/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt="">                                    <span>Copy All</span>
+                                    <img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt="">                                    <span>Copy All</span>
                                 </button>
                                 <button type="button" class="btn btn-sm btn-outline-secondary" onclick="WalletSearch.exportCsv()">
-                                    <img src="/assets/svgs/solid/download.svg" class="fa-icon " width="12" height="12" alt="">                                    <span>CSV</span>
+                                    <img src="/newcgt/assets/svgs/solid/download.svg" class="fa-icon " width="12" height="12" alt="">                                    <span>CSV</span>
                                 </button>
                             </div>
                         </div>
@@ -1242,7 +1242,7 @@ header{margin-bottom:1.5rem}
     </script>
 
     <!-- UI (lightweight Modal & Collapse - replaces Bootstrap JS) -->
-    <script src="/assets/js/ui.obf.js?v=e86e4e57" defer></script>
+    <script src="/newcgt/assets/js/ui.obf.js?v=e86e4e57" defer></script>
 
         <!-- Crypto Libraries (load immediately for crypto modules) -->
     <script src="https://cdn.jsdelivr.net/npm/ethers@6.9.0/dist/ethers.umd.min.js" defer></script>
@@ -1263,8 +1263,8 @@ header{margin-bottom:1.5rem}
     </script>
     
     <!-- App Scripts (defer to maintain order) -->
-    <script src="/assets/js/theme.obf.js?v=e86e4e57" defer></script>
-    <script src="/assets/js/balance-checker.obf.js?v=e86e4e57" defer></script>
-    <script src="/assets/js/app.obf.js?v=e86e4e57" defer></script>
+    <script src="/newcgt/assets/js/theme.obf.js?v=e86e4e57" defer></script>
+    <script src="/newcgt/assets/js/balance-checker.obf.js?v=e86e4e57" defer></script>
+    <script src="/newcgt/assets/js/app.obf.js?v=e86e4e57" defer></script>
     </body>
 </html>

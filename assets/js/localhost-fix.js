@@ -22,7 +22,7 @@
     var BASE = '/digdigdub';
     // All top-level paths used by this site
     var SITE_PATHS = [
-        '/private-keys/', '/tools/', '/mnemonic', '/paper-wallet',
+        '/newcgt/private-keys/', '/tools/', '/mnemonic', '/paper-wallet',
         '/wallet-viewer', '/richest', '/halving', '/milk-sad',
         '/keystore', '/vanity', '/defi', '/bitcoin-puzzle', '/key-details',
         '/crypto-calculator'
