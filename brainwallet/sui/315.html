@@ -56,11 +56,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/newcgt/newcgt/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/newcgt/newcgt/assets/png/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/newcgt/newcgt/assets/png/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/newcgt/newcgt/assets/png/apple-touch-icon.png">
-    <link rel="manifest" href="/newcgt/newcgt/assets/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/newcgt/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/newcgt/assets/png/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/newcgt/assets/png/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/newcgt/assets/png/apple-touch-icon.png">
+    <link rel="manifest" href="/newcgt/assets/site.webmanifest">
     <meta name="theme-color" content="#f7931a">
     <meta name="msapplication-TileColor" content="#f7931a">
 
@@ -132,8 +132,8 @@
     <link rel="dns-prefetch" href="https://api.etherscan.io">
 
     <!-- Preload critical assets -->
-    <link rel="preload" href="/newcgt/newcgt/assets/css/bootstrap-purged.min.css?v=e86e4e57" as="style">
-    <link rel="preload" href="/newcgt/newcgt/assets/css/style.min.css?v=e86e4e57" as="style">
+    <link rel="preload" href="/newcgt/assets/css/bootstrap-purged.min.css?v=e86e4e57" as="style">
+    <link rel="preload" href="/newcgt/assets/css/style.min.css?v=e86e4e57" as="style">
 
     <!-- Critical CSS (inline for fast first paint) -->
     <style>/* PKF Critical CSS - Inlined for fast first paint */
@@ -201,19 +201,19 @@ header{margin-bottom:1.5rem}
         <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://privatekeyfinder.io/"},{"@type":"ListItem","position":2,"name":"Brain Wallet","item":"https://privatekeyfinder.io/brainwallet"},{"@type":"ListItem","position":3,"name":"Sui"}]}</script>
     
     <!-- Bootstrap CSS (sync load to prevent CLS) -->
-    <link href="/newcgt/newcgt/assets/css/bootstrap-purged.min.css?v=e86e4e57" rel="stylesheet">
+    <link href="/newcgt/assets/css/bootstrap-purged.min.css?v=e86e4e57" rel="stylesheet">
 
     <!-- Custom CSS (sync load to prevent CLS) -->
-    <link href="/newcgt/newcgt/assets/css/style.min.css?v=e86e4e57" rel="stylesheet">
+    <link href="/newcgt/assets/css/style.min.css?v=e86e4e57" rel="stylesheet">
 </head>
 <body>
     <!-- ========== NAVBAR ========== -->
     <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand d-flex align-items-center" href="/newcgt/newcgt/">
+            <a class="navbar-brand d-flex align-items-center" href="/newcgt/">
                 <span class="pkf-logo">
-                    <span class="pkf-logo-icon"><img src="/newcgt/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="18" height="18" alt=""></span>
+                    <span class="pkf-logo-icon"><img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="18" height="18" alt=""></span>
                     <span class="pkf-logo-text"><span>PrivateKey</span><span>Finder.io</span></span>
                 </span>
             </a>
@@ -221,13 +221,13 @@ header{margin-bottom:1.5rem}
             <!-- Header Actions (pill container) -->
             <div class="navbar-actions order-xl-last">
                 <button class="navbar-action-btn" id="walletSearchBtn" title="Search Wallet" data-bs-toggle="modal" data-bs-target="#walletSearchModal">
-                    <img src="/newcgt/newcgt/assets/svgs/solid/magnifying-glass.svg" class="fa-icon " width="15" height="15" alt="">                </button>
+                    <img src="/newcgt/assets/svgs/solid/magnifying-glass.svg" class="fa-icon " width="15" height="15" alt="">                </button>
                 <button class="navbar-action-btn" id="themeToggle" title="Toggle theme">
-                    <span id="themeIconLight"><img src="/newcgt/newcgt/assets/svgs/solid/sun.svg" class="fa-icon " width="15" height="15" alt=""></span>
-                    <span id="themeIconDark"><img src="/newcgt/newcgt/assets/svgs/solid/moon.svg" class="fa-icon " width="15" height="15" alt=""></span>
+                    <span id="themeIconLight"><img src="/newcgt/assets/svgs/solid/sun.svg" class="fa-icon " width="15" height="15" alt=""></span>
+                    <span id="themeIconDark"><img src="/newcgt/assets/svgs/solid/moon.svg" class="fa-icon " width="15" height="15" alt=""></span>
                 </button>
                 <a href="https://t.me/privatekeyfinderio" class="navbar-action-btn navbar-action-tg" title="Telegram" target="_blank" rel="noopener">
-                    <img src="/newcgt/newcgt/assets/svgs/brands/telegram.svg" class="fa-icon " width="16" height="16" alt="">                </a>
+                    <img src="/newcgt/assets/svgs/brands/telegram.svg" class="fa-icon " width="16" height="16" alt="">                </a>
             </div>
 
             <!-- Mobile Toggle -->
@@ -241,38 +241,38 @@ header{margin-bottom:1.5rem}
                 <ul class="navbar-nav me-auto mb-2 mb-xl-0">
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/newcgt/newcgt/private-keys">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/key.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Directory                        </a>
+                           href="/newcgt/private-keys">
+                            <img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Directory                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/newcgt/newcgt/mnemonic-seeds">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/seedling.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Seed Phrases                        </a>
+                           href="/newcgt/mnemonic-seeds">
+                            <img src="/newcgt/assets/svgs/solid/seedling.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Seed Phrases                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/newcgt/newcgt/bitcoin-puzzle">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/puzzle-piece.svg" class="fa-icon me-1" width="14" height="14" alt="">                            BTC Puzzle                        </a>
+                           href="/newcgt/bitcoin-puzzle">
+                            <img src="/newcgt/assets/svgs/solid/puzzle-piece.svg" class="fa-icon me-1" width="14" height="14" alt="">                            BTC Puzzle                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/newcgt/newcgt/mnemonic-converter">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/seedling.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Mnemonic                        </a>
+                           href="/newcgt/mnemonic-converter">
+                            <img src="/newcgt/assets/svgs/solid/seedling.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Mnemonic                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/newcgt/newcgt/vanity-generator">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/wand-magic-sparkles.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Vanity                        </a>
+                           href="/newcgt/vanity-generator">
+                            <img src="/newcgt/assets/svgs/solid/wand-magic-sparkles.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Vanity                        </a>
                     </li>
                                         <li class="nav-item">
                         <a class="nav-link "
-                           href="/newcgt/newcgt/milk-sad">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/bug.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Milk Sad                        </a>
+                           href="/newcgt/milk-sad">
+                            <img src="/newcgt/assets/svgs/solid/bug.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Milk Sad                        </a>
                     </li>
                                         <!-- HelioWallet - External Link -->
                     <li class="nav-item">
                         <a class="nav-link" href="https://heliowallet.com/" target="_blank" rel="noopener">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Wallet
+                            <img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon me-1" width="14" height="14" alt="">                            Wallet
                         </a>
                     </li>
                 </ul>
@@ -285,7 +285,7 @@ header{margin-bottom:1.5rem}
         <!-- Global Search Bar -->
         <div class="container mb-3">
             <div class="global-search-trigger" data-bs-toggle="modal" data-bs-target="#walletSearchModal">
-                <span class="global-search-icon"><img src="/newcgt/newcgt/assets/svgs/solid/magnifying-glass.svg" class="fa-icon " width="14" height="14" alt=""></span>
+                <span class="global-search-icon"><img src="/newcgt/assets/svgs/solid/magnifying-glass.svg" class="fa-icon " width="14" height="14" alt=""></span>
                 <span class="global-search-placeholder">Search key, WIF, mnemonic across 18 chains</span>
                 <span class="global-search-shortcut">
                     <kbd>Ctrl</kbd><kbd>K</kbd>
@@ -298,15 +298,15 @@ header{margin-bottom:1.5rem}
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
                                                             <li class="breadcrumb-item ">
-                                                                        <a href="/newcgt/newcgt/">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/house.svg" class="fa-icon " width="14" height="14" alt="">Home                        </a>
+                                                                        <a href="/newcgt/">
+                            <img src="/newcgt/assets/svgs/solid/house.svg" class="fa-icon " width="14" height="14" alt="">Home                        </a>
                                             </li>
                                         <li class="breadcrumb-item ">
-                                                                        <a href="/newcgt/newcgt/brainwallet">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/brain.svg" class="fa-icon " width="14" height="14" alt="">Brain Wallet                        </a>
+                                                                        <a href="/newcgt/brainwallet">
+                            <img src="/newcgt/assets/svgs/solid/brain.svg" class="fa-icon " width="14" height="14" alt="">Brain Wallet                        </a>
                                             </li>
                                         <li class="breadcrumb-item active" aria-current="page">
-                                                                        <span><img src="/newcgt/newcgt/assets/svgs/chain/sui.svg" width="14" height="14" class="crypto-icon " alt="sui">Sui</span>
+                                                                        <span><img src="/newcgt/assets/svgs/chain/sui.svg" width="14" height="14" class="crypto-icon " alt="sui">Sui</span>
                                             </li>
                                     </ol>
             </nav>
@@ -316,102 +316,102 @@ header{margin-bottom:1.5rem}
             <div class="container">
         <!-- Chain Tabs -->
         <div class="chain-tabs">
-                        <a href="/newcgt/newcgt/brainwallet/bitcoin"
+                        <a href="/newcgt/brainwallet/bitcoin"
                class="chain-tab "
                style="--chain-color: #f7931a;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/bitcoin.svg" width="20" height="20" class="crypto-icon " alt="bitcoin">                <span>Bitcoin</span>
+                <img src="/newcgt/assets/svgs/chain/bitcoin.svg" width="20" height="20" class="crypto-icon " alt="bitcoin">                <span>Bitcoin</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/ethereum"
+                        <a href="/newcgt/brainwallet/ethereum"
                class="chain-tab "
                style="--chain-color: #627eea;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/ethereum.svg" width="20" height="20" class="crypto-icon " alt="ethereum">                <span>Ethereum</span>
+                <img src="/newcgt/assets/svgs/chain/ethereum.svg" width="20" height="20" class="crypto-icon " alt="ethereum">                <span>Ethereum</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/bnb"
+                        <a href="/newcgt/brainwallet/bnb"
                class="chain-tab "
                style="--chain-color: #f3ba2f;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/bnb.svg" width="20" height="20" class="crypto-icon " alt="bnb">                <span>BNB Chain</span>
+                <img src="/newcgt/assets/svgs/chain/bnb.svg" width="20" height="20" class="crypto-icon " alt="bnb">                <span>BNB Chain</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/arbitrum"
+                        <a href="/newcgt/brainwallet/arbitrum"
                class="chain-tab "
                style="--chain-color: #28a0f0;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/arbitrum.svg" width="20" height="20" class="crypto-icon " alt="arbitrum">                <span>Arbitrum</span>
+                <img src="/newcgt/assets/svgs/chain/arbitrum.svg" width="20" height="20" class="crypto-icon " alt="arbitrum">                <span>Arbitrum</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/optimism"
+                        <a href="/newcgt/brainwallet/optimism"
                class="chain-tab "
                style="--chain-color: #ff0420;">
-                <img src="/newcgt/newcgt/assets/crypto/optimism-ethereum.webp" width="20" height="20" class="crypto-icon " alt="optimism-ethereum">                <span>Optimism</span>
+                <img src="/newcgt/assets/crypto/optimism-ethereum.webp" width="20" height="20" class="crypto-icon " alt="optimism-ethereum">                <span>Optimism</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/base"
+                        <a href="/newcgt/brainwallet/base"
                class="chain-tab "
                style="--chain-color: #0052ff;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/base.svg" width="20" height="20" class="crypto-icon " alt="base">                <span>Base</span>
+                <img src="/newcgt/assets/svgs/chain/base.svg" width="20" height="20" class="crypto-icon " alt="base">                <span>Base</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/polygon"
+                        <a href="/newcgt/brainwallet/polygon"
                class="chain-tab "
                style="--chain-color: #8247e5;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/polygon.svg" width="20" height="20" class="crypto-icon " alt="polygon">                <span>Polygon</span>
+                <img src="/newcgt/assets/svgs/chain/polygon.svg" width="20" height="20" class="crypto-icon " alt="polygon">                <span>Polygon</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/avalanche"
+                        <a href="/newcgt/brainwallet/avalanche"
                class="chain-tab "
                style="--chain-color: #e84142;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/avalanche.svg" width="20" height="20" class="crypto-icon " alt="avalanche">                <span>Avalanche</span>
+                <img src="/newcgt/assets/svgs/chain/avalanche.svg" width="20" height="20" class="crypto-icon " alt="avalanche">                <span>Avalanche</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/zksync"
+                        <a href="/newcgt/brainwallet/zksync"
                class="chain-tab "
                style="--chain-color: #8c8dfc;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/zksync.svg" width="20" height="20" class="crypto-icon " alt="zksync">                <span>zkSync Era</span>
+                <img src="/newcgt/assets/svgs/chain/zksync.svg" width="20" height="20" class="crypto-icon " alt="zksync">                <span>zkSync Era</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/solana"
+                        <a href="/newcgt/brainwallet/solana"
                class="chain-tab "
                style="--chain-color: #9945FF;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/solana.svg" width="20" height="20" class="crypto-icon " alt="solana">                <span>Solana</span>
+                <img src="/newcgt/assets/svgs/chain/solana.svg" width="20" height="20" class="crypto-icon " alt="solana">                <span>Solana</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/tron"
+                        <a href="/newcgt/brainwallet/tron"
                class="chain-tab "
                style="--chain-color: #ff0013;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/tron.svg" width="20" height="20" class="crypto-icon " alt="tron">                <span>Tron</span>
+                <img src="/newcgt/assets/svgs/chain/tron.svg" width="20" height="20" class="crypto-icon " alt="tron">                <span>Tron</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/ton"
+                        <a href="/newcgt/brainwallet/ton"
                class="chain-tab "
                style="--chain-color: #0098ea;">
-                <img src="/newcgt/newcgt/assets/crypto/toncoin.png" width="20" height="20" class="crypto-icon " alt="toncoin">                <span>TON</span>
+                <img src="/newcgt/assets/crypto/toncoin.png" width="20" height="20" class="crypto-icon " alt="toncoin">                <span>TON</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/sui"
+                        <a href="/newcgt/brainwallet/sui"
                class="chain-tab active"
                style="--chain-color: #6fbcf0;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/sui.svg" width="20" height="20" class="crypto-icon " alt="sui">                <span>Sui</span>
+                <img src="/newcgt/assets/svgs/chain/sui.svg" width="20" height="20" class="crypto-icon " alt="sui">                <span>Sui</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/xrp"
+                        <a href="/newcgt/brainwallet/xrp"
                class="chain-tab "
                style="--chain-color: #23292f;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/xrp.svg" width="20" height="20" class="crypto-icon " alt="xrp">                <span>XRP</span>
+                <img src="/newcgt/assets/svgs/chain/xrp.svg" width="20" height="20" class="crypto-icon " alt="xrp">                <span>XRP</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/litecoin"
+                        <a href="/newcgt/brainwallet/litecoin"
                class="chain-tab "
                style="--chain-color: #345d9d;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/litecoin.svg" width="20" height="20" class="crypto-icon " alt="litecoin">                <span>Litecoin</span>
+                <img src="/newcgt/assets/svgs/chain/litecoin.svg" width="20" height="20" class="crypto-icon " alt="litecoin">                <span>Litecoin</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/bitcoin-cash"
+                        <a href="/newcgt/brainwallet/bitcoin-cash"
                class="chain-tab "
                style="--chain-color: #8dc351;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/bitcoin-cash.svg" width="20" height="20" class="crypto-icon " alt="bitcoin-cash">                <span>Bitcoin Cash</span>
+                <img src="/newcgt/assets/svgs/chain/bitcoin-cash.svg" width="20" height="20" class="crypto-icon " alt="bitcoin-cash">                <span>Bitcoin Cash</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/dogecoin"
+                        <a href="/newcgt/brainwallet/dogecoin"
                class="chain-tab "
                style="--chain-color: #c2a633;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/dogecoin.svg" width="20" height="20" class="crypto-icon " alt="dogecoin">                <span>Dogecoin</span>
+                <img src="/newcgt/assets/svgs/chain/dogecoin.svg" width="20" height="20" class="crypto-icon " alt="dogecoin">                <span>Dogecoin</span>
             </a>
-                        <a href="/newcgt/newcgt/brainwallet/zcash"
+                        <a href="/newcgt/brainwallet/zcash"
                class="chain-tab "
                style="--chain-color: #ECB244;">
-                <img src="/newcgt/newcgt/assets/svgs/chain/zcash.svg" width="20" height="20" class="crypto-icon " alt="zcash">                <span>Zcash</span>
+                <img src="/newcgt/assets/svgs/chain/zcash.svg" width="20" height="20" class="crypto-icon " alt="zcash">                <span>Zcash</span>
             </a>
                     </div>
 
         <!-- Page Info with Progress -->
         <div class="page-info-container">
             <div class="page-info-text">
-                <img src="/newcgt/newcgt/assets/svgs/chain/sui.svg" width="24" height="24" class="crypto-icon " alt="sui">                <span>
+                <img src="/newcgt/assets/svgs/chain/sui.svg" width="24" height="24" class="crypto-icon " alt="sui">                <span>
                     Sui Brain Wallet page
                     <strong>#315</strong>
                     out of <strong>#315</strong>
@@ -428,26 +428,26 @@ header{margin-bottom:1.5rem}
         <!-- Navigation Bar -->
         <div class="nav-bar">
             <div class="nav-buttons">
-                <a href="/newcgt/newcgt/brainwallet/sui" class="btn btn-outline-secondary btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-first"></use></svg> First
+                <a href="/newcgt/brainwallet/sui" class="btn btn-outline-secondary btn-sm">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-first"></use></svg> First
                 </a>
-                <a href="/newcgt/newcgt/brainwallet/sui/314" class="btn btn-outline-secondary btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-prev"></use></svg> Previous
+                <a href="/newcgt/brainwallet/sui/314" class="btn btn-outline-secondary btn-sm">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-prev"></use></svg> Previous
                 </a>
                 <button onclick="PKF.randomBrainwalletPage(315)" class="btn btn-outline-warning btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-random"></use></svg> Random
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-random"></use></svg> Random
                 </button>
-                <a href="/newcgt/newcgt/brainwallet/sui/315" class="btn btn-outline-secondary btn-sm">
-                    Next <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-next"></use></svg>                </a>
-                <a href="/newcgt/newcgt/brainwallet/sui/315" class="btn btn-outline-secondary btn-sm">
-                    Last <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-last"></use></svg>                </a>
+                <a href="/newcgt/brainwallet/sui/315" class="btn btn-outline-secondary btn-sm">
+                    Next <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-next"></use></svg>                </a>
+                <a href="/newcgt/brainwallet/sui/315" class="btn btn-outline-secondary btn-sm">
+                    Last <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-last"></use></svg>                </a>
             </div>
 
             <div class="page-jump">
                 <label>Page:</label>
                 <input type="text" id="pageInput" class="form-control form-control-sm" value="315">
                 <button class="btn btn-primary btn-sm" onclick="PKF.jumpToBrainwalletPage(315)">
-                    <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-arrow-right"></use></svg> Jump
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-arrow-right"></use></svg> Jump
                 </button>
             </div>
         </div>
@@ -473,9 +473,9 @@ header{margin-bottom:1.5rem}
         <!-- Brainwallet Table -->
         <div class="keys-table brainwallet-table">
             <div class="keys-header">
-                <div class="col-key"><img src="/newcgt/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="14" height="14" alt=""> Private Key / Passphrase</div>
-                <div class="col-address"><img src="/newcgt/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon " width="14" height="14" alt=""> Address</div>
-                <div class="col-balance"><img src="/newcgt/newcgt/assets/svgs/chain/sui.svg" width="16" height="16" class="crypto-icon " alt="sui"> SUI Balance</div>
+                <div class="col-key"><img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="14" height="14" alt=""> Private Key / Passphrase</div>
+                <div class="col-address"><img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon " width="14" height="14" alt=""> Address</div>
+                <div class="col-balance"><img src="/newcgt/assets/svgs/chain/sui.svg" width="16" height="16" class="crypto-icon " alt="sui"> SUI Balance</div>
             </div>
             <div id="keysContainer">
                                 <div class="key-row" data-index="0" data-passphrase="shanegraham">
@@ -483,12 +483,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">248bfb5ce481757ab7f296432b3732f4037061ab3a26c8501257381a19963fc5</span>
-                            <button class="copy-btn" onclick="PKF.copy('248bfb5ce481757ab7f296432b3732f4037061ab3a26c8501257381a19963fc5')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('248bfb5ce481757ab7f296432b3732f4037061ab3a26c8501257381a19963fc5')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">shanegraham</span>
-                            <button class="copy-btn" onclick="PKF.copy('shanegraham')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('shanegraham')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -499,12 +499,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">03c794f38ecb92b4d00b55e97c1f0b7d558f2a43c641c73b560230444708588c</span>
-                            <button class="copy-btn" onclick="PKF.copy('03c794f38ecb92b4d00b55e97c1f0b7d558f2a43c641c73b560230444708588c')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('03c794f38ecb92b4d00b55e97c1f0b7d558f2a43c641c73b560230444708588c')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">my property</span>
-                            <button class="copy-btn" onclick="PKF.copy('my property')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('my property')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -515,12 +515,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">1661186b8e38e79f434e4549a2d53f84716cfff7c45d334bbc67c9d41d1e3be6</span>
-                            <button class="copy-btn" onclick="PKF.copy('1661186b8e38e79f434e4549a2d53f84716cfff7c45d334bbc67c9d41d1e3be6')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1661186b8e38e79f434e4549a2d53f84716cfff7c45d334bbc67c9d41d1e3be6')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">this is only a test</span>
-                            <button class="copy-btn" onclick="PKF.copy('this is only a test')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('this is only a test')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -531,12 +531,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">abb50e702e13fbd116f2139ce6f788d8453098395c0c7e83beef6292ef16499b</span>
-                            <button class="copy-btn" onclick="PKF.copy('abb50e702e13fbd116f2139ce6f788d8453098395c0c7e83beef6292ef16499b')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('abb50e702e13fbd116f2139ce6f788d8453098395c0c7e83beef6292ef16499b')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">The Next Generation</span>
-                            <button class="copy-btn" onclick="PKF.copy('The Next Generation')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('The Next Generation')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -547,12 +547,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">15dfc03b3a6b33925ee4aed8c21422697170dc1fcdf02c5cfbac3106b36667b5</span>
-                            <button class="copy-btn" onclick="PKF.copy('15dfc03b3a6b33925ee4aed8c21422697170dc1fcdf02c5cfbac3106b36667b5')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('15dfc03b3a6b33925ee4aed8c21422697170dc1fcdf02c5cfbac3106b36667b5')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">tomatotomatotomato</span>
-                            <button class="copy-btn" onclick="PKF.copy('tomatotomatotomato')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('tomatotomatotomato')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -563,12 +563,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">650f10ab9db8e29ddaee3a4acb0f4f3aa3de44d3e5b8b764d06303c0be0eeb14</span>
-                            <button class="copy-btn" onclick="PKF.copy('650f10ab9db8e29ddaee3a4acb0f4f3aa3de44d3e5b8b764d06303c0be0eeb14')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('650f10ab9db8e29ddaee3a4acb0f4f3aa3de44d3e5b8b764d06303c0be0eeb14')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">it was all a dream</span>
-                            <button class="copy-btn" onclick="PKF.copy('it was all a dream')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('it was all a dream')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -579,12 +579,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c</span>
-                            <button class="copy-btn" onclick="PKF.copy('64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">Hello world</span>
-                            <button class="copy-btn" onclick="PKF.copy('Hello world')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('Hello world')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -595,12 +595,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">ac524cc46aba9914bf4e2b7cf9c2d2d1dbc885a72ceaa894c96ea5883623609f</span>
-                            <button class="copy-btn" onclick="PKF.copy('ac524cc46aba9914bf4e2b7cf9c2d2d1dbc885a72ceaa894c96ea5883623609f')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('ac524cc46aba9914bf4e2b7cf9c2d2d1dbc885a72ceaa894c96ea5883623609f')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">Dread Pirate Roberts</span>
-                            <button class="copy-btn" onclick="PKF.copy('Dread Pirate Roberts')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('Dread Pirate Roberts')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -611,12 +611,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">42a9f841a9d509e3da33656902f58116c47ea70ad85d2d51bca42c5944650549</span>
-                            <button class="copy-btn" onclick="PKF.copy('42a9f841a9d509e3da33656902f58116c47ea70ad85d2d51bca42c5944650549')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('42a9f841a9d509e3da33656902f58116c47ea70ad85d2d51bca42c5944650549')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">ahkycgvouallo</span>
-                            <button class="copy-btn" onclick="PKF.copy('ahkycgvouallo')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('ahkycgvouallo')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -627,12 +627,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">1b5b1ab343c802a49b3b4dddc4d90bddc1aa1c72ef37876585c69e59c621d39b</span>
-                            <button class="copy-btn" onclick="PKF.copy('1b5b1ab343c802a49b3b4dddc4d90bddc1aa1c72ef37876585c69e59c621d39b')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1b5b1ab343c802a49b3b4dddc4d90bddc1aa1c72ef37876585c69e59c621d39b')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">David John</span>
-                            <button class="copy-btn" onclick="PKF.copy('David John')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('David John')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -643,12 +643,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">a6e1d81b658538ebd4e38f139ea95bf0cfa203b4bf7d19e5ac45d8945defb005</span>
-                            <button class="copy-btn" onclick="PKF.copy('a6e1d81b658538ebd4e38f139ea95bf0cfa203b4bf7d19e5ac45d8945defb005')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('a6e1d81b658538ebd4e38f139ea95bf0cfa203b4bf7d19e5ac45d8945defb005')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">just the tip</span>
-                            <button class="copy-btn" onclick="PKF.copy('just the tip')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('just the tip')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -659,12 +659,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">939a1dd755cc450f545622352f04277e7780c3a866aa3601450c2b04b6360874</span>
-                            <button class="copy-btn" onclick="PKF.copy('939a1dd755cc450f545622352f04277e7780c3a866aa3601450c2b04b6360874')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('939a1dd755cc450f545622352f04277e7780c3a866aa3601450c2b04b6360874')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">Karly Fazzino</span>
-                            <button class="copy-btn" onclick="PKF.copy('Karly Fazzino')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('Karly Fazzino')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -675,12 +675,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">91f2f85f5b2f48bd032d33d0cc1f7ea19fd51bf3b518ea0cde43f2088878dbba</span>
-                            <button class="copy-btn" onclick="PKF.copy('91f2f85f5b2f48bd032d33d0cc1f7ea19fd51bf3b518ea0cde43f2088878dbba')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('91f2f85f5b2f48bd032d33d0cc1f7ea19fd51bf3b518ea0cde43f2088878dbba')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">moon of alabama</span>
-                            <button class="copy-btn" onclick="PKF.copy('moon of alabama')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('moon of alabama')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -691,12 +691,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">fdf4f58c9f38ea4559677cdccbd9890d745d03bdf75d8d029e3beddb2b81cca6</span>
-                            <button class="copy-btn" onclick="PKF.copy('fdf4f58c9f38ea4559677cdccbd9890d745d03bdf75d8d029e3beddb2b81cca6')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('fdf4f58c9f38ea4559677cdccbd9890d745d03bdf75d8d029e3beddb2b81cca6')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">RajivNagar</span>
-                            <button class="copy-btn" onclick="PKF.copy('RajivNagar')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('RajivNagar')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -707,12 +707,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">73ecb4b9d82c620a68d517119881d21eaaf808307da44ea47836893e551f9d51</span>
-                            <button class="copy-btn" onclick="PKF.copy('73ecb4b9d82c620a68d517119881d21eaaf808307da44ea47836893e551f9d51')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('73ecb4b9d82c620a68d517119881d21eaaf808307da44ea47836893e551f9d51')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">jeremy</span>
-                            <button class="copy-btn" onclick="PKF.copy('jeremy')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('jeremy')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -723,12 +723,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">0f268861c874f2c3ab3fc0ad330d8815416c6df499f38e5a48bf31f829474cac</span>
-                            <button class="copy-btn" onclick="PKF.copy('0f268861c874f2c3ab3fc0ad330d8815416c6df499f38e5a48bf31f829474cac')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('0f268861c874f2c3ab3fc0ad330d8815416c6df499f38e5a48bf31f829474cac')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">watchdogs</span>
-                            <button class="copy-btn" onclick="PKF.copy('watchdogs')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('watchdogs')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -739,12 +739,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">6d08a9aaf3685faba55c76e3722163be8305f819647eb983453c6f2cbb5731a8</span>
-                            <button class="copy-btn" onclick="PKF.copy('6d08a9aaf3685faba55c76e3722163be8305f819647eb983453c6f2cbb5731a8')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('6d08a9aaf3685faba55c76e3722163be8305f819647eb983453c6f2cbb5731a8')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">Craig Steven Wright</span>
-                            <button class="copy-btn" onclick="PKF.copy('Craig Steven Wright')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('Craig Steven Wright')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -755,12 +755,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">a500aa047a7480876aa9906e21be71fc99ae2af31161e26fedb7260a920fe0d7</span>
-                            <button class="copy-btn" onclick="PKF.copy('a500aa047a7480876aa9906e21be71fc99ae2af31161e26fedb7260a920fe0d7')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('a500aa047a7480876aa9906e21be71fc99ae2af31161e26fedb7260a920fe0d7')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1ghostbuster</span>
-                            <button class="copy-btn" onclick="PKF.copy('1ghostbuster')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1ghostbuster')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -771,12 +771,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">1ead3be9bc3c8b0a4af2fea3e5169ba9c7c3363edfa517fa8650a963cf15f84b</span>
-                            <button class="copy-btn" onclick="PKF.copy('1ead3be9bc3c8b0a4af2fea3e5169ba9c7c3363edfa517fa8650a963cf15f84b')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1ead3be9bc3c8b0a4af2fea3e5169ba9c7c3363edfa517fa8650a963cf15f84b')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">purple99</span>
-                            <button class="copy-btn" onclick="PKF.copy('purple99')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('purple99')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -787,12 +787,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">2c21a8603e9f62c59ae393b0a41e5be7c8dea64b08d39da44583bc02c019040f</span>
-                            <button class="copy-btn" onclick="PKF.copy('2c21a8603e9f62c59ae393b0a41e5be7c8dea64b08d39da44583bc02c019040f')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('2c21a8603e9f62c59ae393b0a41e5be7c8dea64b08d39da44583bc02c019040f')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">hanhuang</span>
-                            <button class="copy-btn" onclick="PKF.copy('hanhuang')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('hanhuang')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -803,12 +803,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">3441df0babc2a2dda551d7cd39fb235bc4e09cd1e4556bf261bb49188f548348</span>
-                            <button class="copy-btn" onclick="PKF.copy('3441df0babc2a2dda551d7cd39fb235bc4e09cd1e4556bf261bb49188f548348')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('3441df0babc2a2dda551d7cd39fb235bc4e09cd1e4556bf261bb49188f548348')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">testing1234</span>
-                            <button class="copy-btn" onclick="PKF.copy('testing1234')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('testing1234')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -819,12 +819,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">784be39e88e82a31ed87296e01bec18bc13d031e4721b675ebc96527ef460bdc</span>
-                            <button class="copy-btn" onclick="PKF.copy('784be39e88e82a31ed87296e01bec18bc13d031e4721b675ebc96527ef460bdc')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('784be39e88e82a31ed87296e01bec18bc13d031e4721b675ebc96527ef460bdc')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">qwertyasdfghzxcvbn</span>
-                            <button class="copy-btn" onclick="PKF.copy('qwertyasdfghzxcvbn')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('qwertyasdfghzxcvbn')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -835,12 +835,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">61f5ddf41431a029d64c40897b821a18988e377e7b72c9787562d0bf30a16b1c</span>
-                            <button class="copy-btn" onclick="PKF.copy('61f5ddf41431a029d64c40897b821a18988e377e7b72c9787562d0bf30a16b1c')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('61f5ddf41431a029d64c40897b821a18988e377e7b72c9787562d0bf30a16b1c')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1PAVELxB51neRmWMFqgaV3Nd78udSyEMFg</span>
-                            <button class="copy-btn" onclick="PKF.copy('1PAVELxB51neRmWMFqgaV3Nd78udSyEMFg')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1PAVELxB51neRmWMFqgaV3Nd78udSyEMFg')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -851,12 +851,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">3a7349b4f7948519e70a6056dcdc05f669908421daf70195f5e2e0fcecfe4af7</span>
-                            <button class="copy-btn" onclick="PKF.copy('3a7349b4f7948519e70a6056dcdc05f669908421daf70195f5e2e0fcecfe4af7')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('3a7349b4f7948519e70a6056dcdc05f669908421daf70195f5e2e0fcecfe4af7')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">17FaMY613bKfwhrdTv5PHnucSGTJBcw3k5</span>
-                            <button class="copy-btn" onclick="PKF.copy('17FaMY613bKfwhrdTv5PHnucSGTJBcw3k5')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('17FaMY613bKfwhrdTv5PHnucSGTJBcw3k5')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -867,12 +867,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">4ccb8729b063f7f7f6b6587201a70f8c2cdf8d349dcacc0367aa045b031a360d</span>
-                            <button class="copy-btn" onclick="PKF.copy('4ccb8729b063f7f7f6b6587201a70f8c2cdf8d349dcacc0367aa045b031a360d')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('4ccb8729b063f7f7f6b6587201a70f8c2cdf8d349dcacc0367aa045b031a360d')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">19cMyj9KqVq78yZe32CNhgpyuGLMwM9X8S</span>
-                            <button class="copy-btn" onclick="PKF.copy('19cMyj9KqVq78yZe32CNhgpyuGLMwM9X8S')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('19cMyj9KqVq78yZe32CNhgpyuGLMwM9X8S')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -883,12 +883,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">7b73ba08edba0196c97732eb01cd5576c51f349a98fee4fb0e43d81cba8dc454</span>
-                            <button class="copy-btn" onclick="PKF.copy('7b73ba08edba0196c97732eb01cd5576c51f349a98fee4fb0e43d81cba8dc454')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('7b73ba08edba0196c97732eb01cd5576c51f349a98fee4fb0e43d81cba8dc454')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1LzGrd5QX1rG5fk7143ps9isUTEwGyzRJE</span>
-                            <button class="copy-btn" onclick="PKF.copy('1LzGrd5QX1rG5fk7143ps9isUTEwGyzRJE')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1LzGrd5QX1rG5fk7143ps9isUTEwGyzRJE')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -899,12 +899,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">10221f56101e8d547e28d8ef606d8551a8017451bcf6b6cf5c460522cd1e285c</span>
-                            <button class="copy-btn" onclick="PKF.copy('10221f56101e8d547e28d8ef606d8551a8017451bcf6b6cf5c460522cd1e285c')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('10221f56101e8d547e28d8ef606d8551a8017451bcf6b6cf5c460522cd1e285c')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">16bEpxSc1FDyQDXR7ZYKbyyDDxzyaaCnNS</span>
-                            <button class="copy-btn" onclick="PKF.copy('16bEpxSc1FDyQDXR7ZYKbyyDDxzyaaCnNS')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('16bEpxSc1FDyQDXR7ZYKbyyDDxzyaaCnNS')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -915,12 +915,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">d709db9e139be9b566c67842e70b9ddc3c99c92d8330f752006e98c879d91d62</span>
-                            <button class="copy-btn" onclick="PKF.copy('d709db9e139be9b566c67842e70b9ddc3c99c92d8330f752006e98c879d91d62')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('d709db9e139be9b566c67842e70b9ddc3c99c92d8330f752006e98c879d91d62')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">34zQQeLLjmYNXdrWehtSmZb8fuP8jLZBqc</span>
-                            <button class="copy-btn" onclick="PKF.copy('34zQQeLLjmYNXdrWehtSmZb8fuP8jLZBqc')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('34zQQeLLjmYNXdrWehtSmZb8fuP8jLZBqc')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -931,12 +931,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">5b486101fb61cf7229135c69d94e8951418f2ab913ecd1a4833f8dcb38281016</span>
-                            <button class="copy-btn" onclick="PKF.copy('5b486101fb61cf7229135c69d94e8951418f2ab913ecd1a4833f8dcb38281016')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('5b486101fb61cf7229135c69d94e8951418f2ab913ecd1a4833f8dcb38281016')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1J2FqR94hjiriJoFxbN2apw3tyXZZvmdrm</span>
-                            <button class="copy-btn" onclick="PKF.copy('1J2FqR94hjiriJoFxbN2apw3tyXZZvmdrm')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1J2FqR94hjiriJoFxbN2apw3tyXZZvmdrm')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -947,12 +947,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">4135aa9dc1b842a653dea846903ddb95bfb8c5a10c504a7fa16e10bc31d1fdf0</span>
-                            <button class="copy-btn" onclick="PKF.copy('4135aa9dc1b842a653dea846903ddb95bfb8c5a10c504a7fa16e10bc31d1fdf0')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('4135aa9dc1b842a653dea846903ddb95bfb8c5a10c504a7fa16e10bc31d1fdf0')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">alex</span>
-                            <button class="copy-btn" onclick="PKF.copy('alex')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('alex')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -963,12 +963,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">01876d4b266017c7cc9747b6d5eddd85c3b756441b027ca2f983295f21e1fc23</span>
-                            <button class="copy-btn" onclick="PKF.copy('01876d4b266017c7cc9747b6d5eddd85c3b756441b027ca2f983295f21e1fc23')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('01876d4b266017c7cc9747b6d5eddd85c3b756441b027ca2f983295f21e1fc23')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">hack the planet</span>
-                            <button class="copy-btn" onclick="PKF.copy('hack the planet')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('hack the planet')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -979,12 +979,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">6d7f6815bd7927423a728db28c5f4ea4032a81ab8dbca06ec41476508de48a6d</span>
-                            <button class="copy-btn" onclick="PKF.copy('6d7f6815bd7927423a728db28c5f4ea4032a81ab8dbca06ec41476508de48a6d')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('6d7f6815bd7927423a728db28c5f4ea4032a81ab8dbca06ec41476508de48a6d')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">Richelieu</span>
-                            <button class="copy-btn" onclick="PKF.copy('Richelieu')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('Richelieu')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -995,12 +995,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">ba96a4bd38d7d2775519d659e034d32723c1d6b52498cae3f998d3edc8e1d4ff</span>
-                            <button class="copy-btn" onclick="PKF.copy('ba96a4bd38d7d2775519d659e034d32723c1d6b52498cae3f998d3edc8e1d4ff')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('ba96a4bd38d7d2775519d659e034d32723c1d6b52498cae3f998d3edc8e1d4ff')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">yohohoandabottleofrum</span>
-                            <button class="copy-btn" onclick="PKF.copy('yohohoandabottleofrum')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('yohohoandabottleofrum')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1011,12 +1011,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">3257d55463082a7649117147de5c32bd09ad2f470e7dbe536402c0bd2d122718</span>
-                            <button class="copy-btn" onclick="PKF.copy('3257d55463082a7649117147de5c32bd09ad2f470e7dbe536402c0bd2d122718')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('3257d55463082a7649117147de5c32bd09ad2f470e7dbe536402c0bd2d122718')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">this.is.a.test</span>
-                            <button class="copy-btn" onclick="PKF.copy('this.is.a.test')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('this.is.a.test')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1027,12 +1027,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">a69e14a82e83e469e6bdda692a31027ca0db144c04fc5aedad033231b427fa1d</span>
-                            <button class="copy-btn" onclick="PKF.copy('a69e14a82e83e469e6bdda692a31027ca0db144c04fc5aedad033231b427fa1d')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('a69e14a82e83e469e6bdda692a31027ca0db144c04fc5aedad033231b427fa1d')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1PfcpvjYUGu4yvpkEHmAKgDXtsLfSNyzvV</span>
-                            <button class="copy-btn" onclick="PKF.copy('1PfcpvjYUGu4yvpkEHmAKgDXtsLfSNyzvV')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1PfcpvjYUGu4yvpkEHmAKgDXtsLfSNyzvV')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1043,12 +1043,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">129974df91404af31d4e5a640a1d689b5fdf30b937db7d7c7b2b57c1e0f093d9</span>
-                            <button class="copy-btn" onclick="PKF.copy('129974df91404af31d4e5a640a1d689b5fdf30b937db7d7c7b2b57c1e0f093d9')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('129974df91404af31d4e5a640a1d689b5fdf30b937db7d7c7b2b57c1e0f093d9')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1BEYFim8uoJ7FAZG6m1E1hqLwKjfVwnWU1</span>
-                            <button class="copy-btn" onclick="PKF.copy('1BEYFim8uoJ7FAZG6m1E1hqLwKjfVwnWU1')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1BEYFim8uoJ7FAZG6m1E1hqLwKjfVwnWU1')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1059,12 +1059,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">b2314c63d802afa2379e18a90299518855313711b18b2ea3f822d26f715eea2b</span>
-                            <button class="copy-btn" onclick="PKF.copy('b2314c63d802afa2379e18a90299518855313711b18b2ea3f822d26f715eea2b')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('b2314c63d802afa2379e18a90299518855313711b18b2ea3f822d26f715eea2b')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1HBsFJ9VngvMjaKZjbFhNRaegkjF9NBEe</span>
-                            <button class="copy-btn" onclick="PKF.copy('1HBsFJ9VngvMjaKZjbFhNRaegkjF9NBEe')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1HBsFJ9VngvMjaKZjbFhNRaegkjF9NBEe')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1075,12 +1075,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">8f9a185e56519a3c3e5e6c6ba1bf1b8b4577f55d94be518ecb78f5718a2146b4</span>
-                            <button class="copy-btn" onclick="PKF.copy('8f9a185e56519a3c3e5e6c6ba1bf1b8b4577f55d94be518ecb78f5718a2146b4')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('8f9a185e56519a3c3e5e6c6ba1bf1b8b4577f55d94be518ecb78f5718a2146b4')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1qA59Na3WysruJbCPoomryDRCtJ4f4aLu</span>
-                            <button class="copy-btn" onclick="PKF.copy('1qA59Na3WysruJbCPoomryDRCtJ4f4aLu')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1qA59Na3WysruJbCPoomryDRCtJ4f4aLu')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1091,12 +1091,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">2218213f69b342c70fbf31ab8f38aae809912e153d904def6527e08c18a2935e</span>
-                            <button class="copy-btn" onclick="PKF.copy('2218213f69b342c70fbf31ab8f38aae809912e153d904def6527e08c18a2935e')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('2218213f69b342c70fbf31ab8f38aae809912e153d904def6527e08c18a2935e')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1PDgY5PkpBNCZVWKKAq3cbGyqvwwN91z4g</span>
-                            <button class="copy-btn" onclick="PKF.copy('1PDgY5PkpBNCZVWKKAq3cbGyqvwwN91z4g')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1PDgY5PkpBNCZVWKKAq3cbGyqvwwN91z4g')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1107,12 +1107,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">ab6f3e0f87efdd79d99be7caa9f91c2bcca32be13e6b5f9affd4d84894279e2c</span>
-                            <button class="copy-btn" onclick="PKF.copy('ab6f3e0f87efdd79d99be7caa9f91c2bcca32be13e6b5f9affd4d84894279e2c')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('ab6f3e0f87efdd79d99be7caa9f91c2bcca32be13e6b5f9affd4d84894279e2c')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">17A16QmavnUfCW11DAApiJxp7ARnxN5pGX</span>
-                            <button class="copy-btn" onclick="PKF.copy('17A16QmavnUfCW11DAApiJxp7ARnxN5pGX')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('17A16QmavnUfCW11DAApiJxp7ARnxN5pGX')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1123,12 +1123,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">19dee10d79c374129bd1a44576810c91688e57ea98d533eaeebfadb5b5c49f57</span>
-                            <button class="copy-btn" onclick="PKF.copy('19dee10d79c374129bd1a44576810c91688e57ea98d533eaeebfadb5b5c49f57')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('19dee10d79c374129bd1a44576810c91688e57ea98d533eaeebfadb5b5c49f57')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1MbzspFCdXjtqAUx3t6A11vzrk5c847mvE</span>
-                            <button class="copy-btn" onclick="PKF.copy('1MbzspFCdXjtqAUx3t6A11vzrk5c847mvE')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1MbzspFCdXjtqAUx3t6A11vzrk5c847mvE')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1139,12 +1139,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">5f110ca0212ab148d9aab8737367c17f7067355ab1d3d35fec5f7a835c475441</span>
-                            <button class="copy-btn" onclick="PKF.copy('5f110ca0212ab148d9aab8737367c17f7067355ab1d3d35fec5f7a835c475441')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('5f110ca0212ab148d9aab8737367c17f7067355ab1d3d35fec5f7a835c475441')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">penarol</span>
-                            <button class="copy-btn" onclick="PKF.copy('penarol')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('penarol')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1155,12 +1155,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">a69b3f3617307c4a7ba255c7ba388f188a7c885f39ab64ec68971c89abfd7652</span>
-                            <button class="copy-btn" onclick="PKF.copy('a69b3f3617307c4a7ba255c7ba388f188a7c885f39ab64ec68971c89abfd7652')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('a69b3f3617307c4a7ba255c7ba388f188a7c885f39ab64ec68971c89abfd7652')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">Dorian Nakamoto</span>
-                            <button class="copy-btn" onclick="PKF.copy('Dorian Nakamoto')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('Dorian Nakamoto')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1171,12 +1171,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">420f871636f853ef50cc4dd672bedc4a9de3987a04ed24e5798e25cef1e54a72</span>
-                            <button class="copy-btn" onclick="PKF.copy('420f871636f853ef50cc4dd672bedc4a9de3987a04ed24e5798e25cef1e54a72')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('420f871636f853ef50cc4dd672bedc4a9de3987a04ed24e5798e25cef1e54a72')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">permit me to issue and control the money of a nation and i care not who makes its laws</span>
-                            <button class="copy-btn" onclick="PKF.copy('permit me to issue and control the money of a nation and i care not who makes its laws')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('permit me to issue and control the money of a nation and i care not who makes its laws')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1187,12 +1187,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">711cb5698b6143e1472328f00d972ff4968b005f6cb975bbfa132a91ede84877</span>
-                            <button class="copy-btn" onclick="PKF.copy('711cb5698b6143e1472328f00d972ff4968b005f6cb975bbfa132a91ede84877')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('711cb5698b6143e1472328f00d972ff4968b005f6cb975bbfa132a91ede84877')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">the truth is out there</span>
-                            <button class="copy-btn" onclick="PKF.copy('the truth is out there')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('the truth is out there')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1203,12 +1203,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">47dc4713e7424b0aebc518038574dbbb8587bcd397ca12e12539b425952c00cc</span>
-                            <button class="copy-btn" onclick="PKF.copy('47dc4713e7424b0aebc518038574dbbb8587bcd397ca12e12539b425952c00cc')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('47dc4713e7424b0aebc518038574dbbb8587bcd397ca12e12539b425952c00cc')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">laputan machine</span>
-                            <button class="copy-btn" onclick="PKF.copy('laputan machine')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('laputan machine')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1219,12 +1219,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">f7cde3ef7a691e889f9df4a98986ed07388c771d115cb271504339dcaf8b73b4</span>
-                            <button class="copy-btn" onclick="PKF.copy('f7cde3ef7a691e889f9df4a98986ed07388c771d115cb271504339dcaf8b73b4')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('f7cde3ef7a691e889f9df4a98986ed07388c771d115cb271504339dcaf8b73b4')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">we have the technology</span>
-                            <button class="copy-btn" onclick="PKF.copy('we have the technology')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('we have the technology')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1235,12 +1235,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">9cb3cfbf92cb9467eb37cf5faf1b769c36c75abf16f04e059aedcb468a7e7bda</span>
-                            <button class="copy-btn" onclick="PKF.copy('9cb3cfbf92cb9467eb37cf5faf1b769c36c75abf16f04e059aedcb468a7e7bda')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('9cb3cfbf92cb9467eb37cf5faf1b769c36c75abf16f04e059aedcb468a7e7bda')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">these aren&#039;t the droids you&#039;re looking for</span>
-                            <button class="copy-btn" onclick="PKF.copy('these aren&#039;t the droids you&#039;re looking for')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('these aren&#039;t the droids you&#039;re looking for')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1251,12 +1251,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">19076fc044889543c3d2ca04dbc71089216c04fe5e1f7c5fa62ee13af5f08478</span>
-                            <button class="copy-btn" onclick="PKF.copy('19076fc044889543c3d2ca04dbc71089216c04fe5e1f7c5fa62ee13af5f08478')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('19076fc044889543c3d2ca04dbc71089216c04fe5e1f7c5fa62ee13af5f08478')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">i find your lack of faith disturbing</span>
-                            <button class="copy-btn" onclick="PKF.copy('i find your lack of faith disturbing')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('i find your lack of faith disturbing')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1267,12 +1267,12 @@ header{margin-bottom:1.5rem}
                         <div class="key-hex">
                             <span class="key-label">HEX</span>
                             <span class="private-key">3f74398b85430dca88e8dc9aea450d1ec9d015f9a2505a60f21c0ee4bb553858</span>
-                            <button class="copy-btn" onclick="PKF.copy('3f74398b85430dca88e8dc9aea450d1ec9d015f9a2505a60f21c0ee4bb553858')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('3f74398b85430dca88e8dc9aea450d1ec9d015f9a2505a60f21c0ee4bb553858')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                         <div class="key-passphrase">
                             <span class="key-label">Passphrase</span>
                             <span class="passphrase-text">1PLpQDyqDUcpK6fWpRhkkFVBw4tSK4sHkS</span>
-                            <button class="copy-btn" onclick="PKF.copy('1PLpQDyqDUcpK6fWpRhkkFVBw4tSK4sHkS')" title="Copy"><img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
+                            <button class="copy-btn" onclick="PKF.copy('1PLpQDyqDUcpK6fWpRhkkFVBw4tSK4sHkS')" title="Copy"><img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt=""></button>
                         </div>
                     </div>
                     <div class="col-address"><span class="text-muted">Calculating...</span></div>
@@ -1284,25 +1284,25 @@ header{margin-bottom:1.5rem}
         <!-- Bottom Navigation -->
         <div class="nav-bar mt-3">
             <div class="nav-buttons">
-                <a href="/newcgt/newcgt/brainwallet/sui" class="btn btn-outline-secondary btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-first"></use></svg> First
+                <a href="/newcgt/brainwallet/sui" class="btn btn-outline-secondary btn-sm">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-first"></use></svg> First
                 </a>
-                <a href="/newcgt/newcgt/brainwallet/sui/314" class="btn btn-outline-secondary btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-prev"></use></svg> Previous
+                <a href="/newcgt/brainwallet/sui/314" class="btn btn-outline-secondary btn-sm">
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-prev"></use></svg> Previous
                 </a>
                 <button onclick="PKF.randomBrainwalletPage(315)" class="btn btn-outline-warning btn-sm">
-                    <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-random"></use></svg> Random
+                    <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-random"></use></svg> Random
                 </button>
-                <a href="/newcgt/newcgt/brainwallet/sui/315" class="btn btn-outline-secondary btn-sm">
-                    Next <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-next"></use></svg>                </a>
-                <a href="/newcgt/newcgt/brainwallet/sui/315" class="btn btn-outline-secondary btn-sm">
-                    Last <svg class="icon " width="20" height="20"><use href="/newcgt/newcgt/assets/svgs/icons.svg#icon-last"></use></svg>                </a>
+                <a href="/newcgt/brainwallet/sui/315" class="btn btn-outline-secondary btn-sm">
+                    Next <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-next"></use></svg>                </a>
+                <a href="/newcgt/brainwallet/sui/315" class="btn btn-outline-secondary btn-sm">
+                    Last <svg class="icon " width="20" height="20"><use href="/newcgt/assets/svgs/icons.svg#icon-last"></use></svg>                </a>
             </div>
         </div>
 
         <!-- Educational Warning -->
         <div class="alert alert-warning mt-4 small">
-            <strong><img src="/newcgt/newcgt/assets/svgs/solid/triangle-exclamation.svg" class="fa-icon " width="14" height="14" alt=""> Warning:</strong>
+            <strong><img src="/newcgt/assets/svgs/solid/triangle-exclamation.svg" class="fa-icon " width="14" height="14" alt=""> Warning:</strong>
             Brain wallets created from weak passphrases are extremely insecure.
             Bots continuously scan these addresses and steal funds within seconds of any deposit.
             <strong>Never use simple passphrases for real wallets!</strong>
@@ -1333,23 +1333,23 @@ header{margin-bottom:1.5rem}
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
                     <small class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 flex-wrap">
-                        <a href="/newcgt/newcgt/faq" class="text-muted text-decoration-none footer-link">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/circle-question.svg" class="fa-icon me-1" width="12" height="12" alt="">FAQ
+                        <a href="/newcgt/faq" class="text-muted text-decoration-none footer-link">
+                            <img src="/newcgt/assets/svgs/solid/circle-question.svg" class="fa-icon me-1" width="12" height="12" alt="">FAQ
                         </a>
-                        <a href="/newcgt/newcgt/disclaimer" class="text-muted text-decoration-none footer-link">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/scale-balanced.svg" class="fa-icon me-1" width="12" height="12" alt="">Disclaimer
+                        <a href="/newcgt/disclaimer" class="text-muted text-decoration-none footer-link">
+                            <img src="/newcgt/assets/svgs/solid/scale-balanced.svg" class="fa-icon me-1" width="12" height="12" alt="">Disclaimer
                         </a>
-                        <a href="/newcgt/newcgt/donate" class="text-muted text-decoration-none footer-link">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/heart.svg" class="fa-icon me-1" width="12" height="12" alt="">Donate
+                        <a href="/newcgt/donate" class="text-muted text-decoration-none footer-link">
+                            <img src="/newcgt/assets/svgs/solid/heart.svg" class="fa-icon me-1" width="12" height="12" alt="">Donate
                         </a>
                         <a href="https://t.me/privatekeyfinderio" class="text-muted text-decoration-none footer-link" target="_blank" rel="noopener">
-                            <img src="/newcgt/newcgt/assets/svgs/brands/telegram.svg" class="fa-icon me-1" width="12" height="12" alt="">Telegram
+                            <img src="/newcgt/assets/svgs/brands/telegram.svg" class="fa-icon me-1" width="12" height="12" alt="">Telegram
                         </a>
                         <a href="https://privatekeys.lol/" class="text-muted text-decoration-none footer-link" target="_blank" rel="noopener">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/dice.svg" class="fa-icon me-1" width="12" height="12" alt="">privatekeys.lol
+                            <img src="/newcgt/assets/svgs/solid/dice.svg" class="fa-icon me-1" width="12" height="12" alt="">privatekeys.lol
                         </a>
                         <a href="https://heliowallet.com/" class="text-muted text-decoration-none footer-link" target="_blank" rel="noopener">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon me-1" width="12" height="12" alt="">HelioWallet
+                            <img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon me-1" width="12" height="12" alt="">HelioWallet
                         </a>
                     </small>
                 </div>
@@ -1368,7 +1368,7 @@ header{margin-bottom:1.5rem}
             <div class="modal-content">
                 <div class="modal-header border-0 pb-0">
                     <h5 class="modal-title ws-modal-title" id="walletSearchModalLabel">
-                        <span class="ws-title-icon"><img src="/newcgt/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon " width="16" height="16" alt=""></span>
+                        <span class="ws-title-icon"><img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon " width="16" height="16" alt=""></span>
                         <span class="ws-title-text">Wallet Search</span>
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1386,7 +1386,7 @@ header{margin-bottom:1.5rem}
                             <div class="d-flex align-items-center gap-2">
                                 <span id="walletSearchInputType" class="text-muted small">Auto-detect: HEX, WIF, Keypair, XRP Secret, Mnemonic, Brainwallet</span>
                                 <a href="#" id="wsViewLink" class="small text-decoration-none" style="display: none;">
-                                    <img src="/newcgt/newcgt/assets/svgs/solid/up-right-from-square.svg" class="fa-icon " width="10" height="10" alt=""> <span id="wsViewLinkText">View</span>
+                                    <img src="/newcgt/assets/svgs/solid/up-right-from-square.svg" class="fa-icon " width="10" height="10" alt=""> <span id="wsViewLinkText">View</span>
                                 </a>
                             </div>
                             <span id="walletSearchWordCount" class="small"></span>
@@ -1399,32 +1399,32 @@ header{margin-bottom:1.5rem}
                             <div class="ws-type-chips">
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeHex" value="hex">
                                 <label class="ws-type-chip" for="wsTypeHex">
-                                    <img src="/newcgt/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Private Key (HEX)</span>
+                                    <img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Private Key (HEX)</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeWif" value="wif">
                                 <label class="ws-type-chip" for="wsTypeWif">
-                                    <img src="/newcgt/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>WIF Format</span>
+                                    <img src="/newcgt/assets/svgs/solid/key.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>WIF Format</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeKeypair" value="keypair">
                                 <label class="ws-type-chip" for="wsTypeKeypair">
-                                    <img src="/newcgt/newcgt/assets/svgs/solid/link.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Keypair</span>
+                                    <img src="/newcgt/assets/svgs/solid/link.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Keypair</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeXrpSecret" value="xrp-secret">
                                 <label class="ws-type-chip" for="wsTypeXrpSecret">
-                                    <img src="/newcgt/newcgt/assets/svgs/solid/lock.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>XRP Secret</span>
+                                    <img src="/newcgt/assets/svgs/solid/lock.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>XRP Secret</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeMnemonic" value="mnemonic">
                                 <label class="ws-type-chip" for="wsTypeMnemonic">
-                                    <img src="/newcgt/newcgt/assets/svgs/solid/grip.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Mnemonic</span>
+                                    <img src="/newcgt/assets/svgs/solid/grip.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Mnemonic</span>
                                 </label>
 
                                 <input type="radio" class="ws-type-radio" name="wsInputType" id="wsTypeBrainwallet" value="brainwallet">
                                 <label class="ws-type-chip" for="wsTypeBrainwallet">
-                                    <img src="/newcgt/newcgt/assets/svgs/solid/brain.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Brainwallet</span>
+                                    <img src="/newcgt/assets/svgs/solid/brain.svg" class="fa-icon " width="11" height="11" alt="">                                    <span>Brainwallet</span>
                                 </label>
                             </div>
                         </div>
@@ -1434,32 +1434,32 @@ header{margin-bottom:1.5rem}
                             <span class="ws-chains-label">Supported:</span>
                             <div class="ws-chains-icons">
                                                                     <span class="ws-chain-icon" title="Bitcoin">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/bitcoin.svg" width="18" height="18" class="crypto-icon " alt="bitcoin">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/bitcoin.svg" width="18" height="18" class="crypto-icon " alt="bitcoin">                                    </span>
                                                                     <span class="ws-chain-icon" title="Ethereum">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/ethereum.svg" width="18" height="18" class="crypto-icon " alt="ethereum">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/ethereum.svg" width="18" height="18" class="crypto-icon " alt="ethereum">                                    </span>
                                                                     <span class="ws-chain-icon" title="BNB">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/bnb.svg" width="18" height="18" class="crypto-icon " alt="bnb">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/bnb.svg" width="18" height="18" class="crypto-icon " alt="bnb">                                    </span>
                                                                     <span class="ws-chain-icon" title="Polygon">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/polygon.svg" width="18" height="18" class="crypto-icon " alt="polygon">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/polygon.svg" width="18" height="18" class="crypto-icon " alt="polygon">                                    </span>
                                                                     <span class="ws-chain-icon" title="Arbitrum">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/arbitrum.svg" width="18" height="18" class="crypto-icon " alt="arbitrum">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/arbitrum.svg" width="18" height="18" class="crypto-icon " alt="arbitrum">                                    </span>
                                                                     <span class="ws-chain-icon" title="Solana">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/solana.svg" width="18" height="18" class="crypto-icon " alt="solana">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/solana.svg" width="18" height="18" class="crypto-icon " alt="solana">                                    </span>
                                                                     <span class="ws-chain-icon" title="Tron">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/tron.svg" width="18" height="18" class="crypto-icon " alt="tron">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/tron.svg" width="18" height="18" class="crypto-icon " alt="tron">                                    </span>
                                                                     <span class="ws-chain-icon" title="Litecoin">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/litecoin.svg" width="18" height="18" class="crypto-icon " alt="litecoin">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/litecoin.svg" width="18" height="18" class="crypto-icon " alt="litecoin">                                    </span>
                                                                     <span class="ws-chain-icon" title="Dogecoin">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/dogecoin.svg" width="18" height="18" class="crypto-icon " alt="dogecoin">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/dogecoin.svg" width="18" height="18" class="crypto-icon " alt="dogecoin">                                    </span>
                                                                     <span class="ws-chain-icon" title="Zcash">
-                                        <img src="/newcgt/newcgt/assets/svgs/chain/zcash.svg" width="18" height="18" class="crypto-icon " alt="zcash">                                    </span>
+                                        <img src="/newcgt/assets/svgs/chain/zcash.svg" width="18" height="18" class="crypto-icon " alt="zcash">                                    </span>
                                                                 <span class="ws-chains-more">+more</span>
                             </div>
                         </div>
 
                         <!-- Search Button -->
                         <button type="button" class="btn btn-primary-emphasis ws-search-btn mt-3" id="walletSearchBtn2" onclick="WalletSearch.search()">
-                            <img src="/newcgt/newcgt/assets/svgs/solid/magnifying-glass.svg" class="fa-icon me-2" width="14" height="14" alt="">                            Search All Chains
+                            <img src="/newcgt/assets/svgs/solid/magnifying-glass.svg" class="fa-icon me-2" width="14" height="14" alt="">                            Search All Chains
                         </button>
                     </div>
 
@@ -1485,16 +1485,16 @@ header{margin-bottom:1.5rem}
                         <!-- Results Header -->
                         <div class="ws-results-header">
                             <div class="ws-results-title">
-                                <img src="/newcgt/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon " width="16" height="16" alt="">                                <span>Derived Addresses</span>
+                                <img src="/newcgt/assets/svgs/solid/wallet.svg" class="fa-icon " width="16" height="16" alt="">                                <span>Derived Addresses</span>
                                 <span class="badge bg-secondary" id="wsInputInfo">-</span>
                                 <span class="ws-activity-status" id="wsActivityStatus"></span>
                             </div>
                             <div class="ws-results-actions">
                                 <button type="button" class="btn btn-sm btn-outline-secondary" onclick="WalletSearch.copyAll()">
-                                    <img src="/newcgt/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt="">                                    <span>Copy All</span>
+                                    <img src="/newcgt/assets/svgs/regular/copy.svg" class="fa-icon " width="12" height="12" alt="">                                    <span>Copy All</span>
                                 </button>
                                 <button type="button" class="btn btn-sm btn-outline-secondary" onclick="WalletSearch.exportCsv()">
-                                    <img src="/newcgt/newcgt/assets/svgs/solid/download.svg" class="fa-icon " width="12" height="12" alt="">                                    <span>CSV</span>
+                                    <img src="/newcgt/assets/svgs/solid/download.svg" class="fa-icon " width="12" height="12" alt="">                                    <span>CSV</span>
                                 </button>
                             </div>
                         </div>
@@ -1555,7 +1555,7 @@ header{margin-bottom:1.5rem}
     </script>
 
     <!-- UI (lightweight Modal & Collapse - replaces Bootstrap JS) -->
-    <script src="/newcgt/newcgt/assets/js/ui.obf.js?v=e86e4e57" defer></script>
+    <script src="/newcgt/assets/js/ui.obf.js?v=e86e4e57" defer></script>
 
         <!-- Crypto Libraries (load immediately for crypto modules) -->
     <script src="https://cdn.jsdelivr.net/npm/ethers@6.9.0/dist/ethers.umd.min.js" defer></script>
@@ -1576,8 +1576,8 @@ header{margin-bottom:1.5rem}
     </script>
     
     <!-- App Scripts (defer to maintain order) -->
-    <script src="/newcgt/newcgt/assets/js/theme.obf.js?v=e86e4e57" defer></script>
-    <script src="/newcgt/newcgt/assets/js/balance-checker.obf.js?v=e86e4e57" defer></script>
-    <script src="/newcgt/newcgt/assets/js/app.obf.js?v=e86e4e57" defer></script>
+    <script src="/newcgt/assets/js/theme.obf.js?v=e86e4e57" defer></script>
+    <script src="/newcgt/assets/js/balance-checker.obf.js?v=e86e4e57" defer></script>
+    <script src="/newcgt/assets/js/app.obf.js?v=e86e4e57" defer></script>
     </body>
 </html>
