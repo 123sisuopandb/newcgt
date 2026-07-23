@@ -118,7 +118,7 @@
 
                     // Bitcoin clones
                     var pfx = prefixes[chain];
-                    var type = (window.PKF_CONFIG && window.PKF_CONFIG.type) ? window.PKF_CONFIG.type : (window._currentType || 'legacy');
+                    var type = window._currentType || (window.PKF_CONFIG ? window.PKF_CONFIG.type : 'legacy') || 'legacy';
                     
                     if (!colKey.querySelector('.wif-group')) {
                         var hexBytes = new Uint8Array(hex.match(/.{1,2}/g).map(function(x){ return parseInt(x, 16); }));
