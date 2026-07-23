@@ -1,6 +1,7 @@
 (function() {
     'use strict';
     var _ready = false;
+    var _initDone = false;
 
     /* ====== Base58 ====== */
     var B58 = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
@@ -81,20 +82,17 @@
             var oc = btn.getAttribute('onclick') || '';
             var match = oc.match(/changeAddressType\s*\(\s*'([^']+)'\s*\)/);
             if (match) {
-                if (match[1] === type) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
+                btn.classList.toggle('active', match[1] === type);
             }
         });
     }
 
-    /* ====== Process all key rows ====== */
+    /* ====== Recompute addresses only (NO WIF — app.obf.js handles WIF) ====== */
     function processRows() {
         var rows = document.querySelectorAll('#keysContainer .key-row');
         if (!rows.length) return;
         var chain = window.PKF_CONFIG ? window.PKF_CONFIG.chain : 'bitcoin';
+        var type  = window._currentType || (window.PKF_CONFIG ? window.PKF_CONFIG.type : null) || 'legacy';
 
         var prefixes = {
             'bitcoin':      { p2pkh: [0x00], wif: [0x80], p2sh: [0x05], bech32: 'bc'  },
@@ -106,9 +104,8 @@
 
         Array.from(rows).forEach(function(row, i) {
             var keyEl  = row.querySelector('.private-key');
-            var colKey = row.querySelector('.col-key');
             var addrEl = row.querySelector('.col-address');
-            if (!keyEl || !addrEl || !colKey) return;
+            if (!keyEl || !addrEl) return;
             var hex = keyEl.textContent.trim();
 
             setTimeout(function() {
@@ -140,37 +137,19 @@
 
                     /* ---------- Unsupported ---------- */
                     if (!prefixes[chain]) {
-                        addrEl.innerHTML = '<span class="text-muted" style="font-size:0.8em;">Unsupported by engine</span>';
+                        addrEl.innerHTML = '<span class="text-muted" style="font-size:0.8em;">-</span>';
                         return;
                     }
 
                     /* ---------- Bitcoin-family ---------- */
-                    var pfx  = prefixes[chain];
-                    var type = window._currentType || (window.PKF_CONFIG ? window.PKF_CONFIG.type : null) || 'legacy';
-
-                    /* Add WIF keys once per row */
-                    if (!colKey.querySelector('.wif-group')) {
-                        var hexBytes    = new Uint8Array(hex.match(/.{1,2}/g).map(function(x){ return parseInt(x,16); }));
-                        var compPayload = new Uint8Array(33);
-                        compPayload.set(hexBytes);
-                        compPayload[32] = 0x01;
-                        var wifC = base58check(pfx.wif, compPayload);
-                        var wifU = base58check(pfx.wif, hexBytes);
-
-                        var wifHtml  = '<div class="wif-group" style="margin-top:5px;font-size:0.8em;">';
-                        wifHtml += '<div class="wif-row" style="margin-bottom:2px;"><span class="text-muted">(c)</span> <span style="font-family:monospace;word-break:break-all;">' + wifC + '</span></div>';
-                        wifHtml += '<div class="wif-row"><span class="text-muted">(u)</span> <span style="font-family:monospace;word-break:break-all;">' + wifU + '</span></div>';
-                        wifHtml += '</div>';
-                        colKey.innerHTML += wifHtml;
-                    }
-
-                    var secp   = window.NobleCurves.secp256k1Module.secp256k1;
+                    var pfx     = prefixes[chain];
+                    var secp    = window.NobleCurves.secp256k1Module.secp256k1;
                     var privInt = BigInt('0x' + hex);
-                    var pubC   = secp.getPublicKey(privInt, true);
-                    var pubU   = secp.getPublicKey(privInt, false);
-                    var h160C  = h160(pubC);
-                    var h160U  = h160(pubU);
-                    var addrs  = [];
+                    var pubC    = secp.getPublicKey(privInt, true);
+                    var pubU    = secp.getPublicKey(privInt, false);
+                    var h160C   = h160(pubC);
+                    var h160U   = h160(pubU);
+                    var addrs   = [];
 
                     if (type === 'legacy') {
                         addrs.push(base58check(pfx.p2pkh, h160C));
@@ -213,48 +192,38 @@
         });
     }
 
-    /* ====== Main init – called once crypto libs are ready ====== */
+    /* ====== Init — runs once when crypto libs are ready ====== */
     function onReady() {
         if (!window.NobleHashes || (!window.NobleCurves && !window.ethers)) return;
-        if (_ready) return;   // prevent double-init
+        if (_ready) return;
         _ready = true;
 
-        /* Ensure window.PKF exists */
         if (!window.PKF) window.PKF = {};
 
-        /* 
-         * Override changeAddressType completely.
-         * DO NOT call the original — it navigates to a different URL
-         * (e.g. /private-keys/bitcoin/10/segwit) which does not exist in this clone.
-         * Instead we update everything client-side.
+        /* Read the page's default type and set it as current */
+        var initType = (window.PKF_CONFIG && window.PKF_CONFIG.type) ? window.PKF_CONFIG.type : 'legacy';
+        window._currentType = initType;
+        updateActiveButtons(initType);
+
+        /*
+         * Override changeAddressType:
+         *   - Do NOT call the original – it navigates to a different URL
+         *     (e.g. /private-keys/bitcoin/10/segwit) which does not exist.
+         *   - Handle everything client-side.
          */
         window.PKF.changeAddressType = function(type) {
             window._currentType = type;
             updateActiveButtons(type);
-            processRows();
+            processRows();          /* recompute addresses only — WIF stays untouched */
         };
 
-        /* Initial render using the type from PKF_CONFIG */
-        var initType = (window.PKF_CONFIG && window.PKF_CONFIG.type) ? window.PKF_CONFIG.type : 'legacy';
-        window._currentType = initType;
-        updateActiveButtons(initType);
-        processRows();
+        /* 
+         * We do NOT call processRows() here.
+         * app.obf.js already computes the initial addresses (and WIF).
+         * We only intervene when the user switches type.
+         */
     }
 
     window.addEventListener('noble-loaded', onReady);
-    /* Fallback timers in case the event already fired */
     [300, 800, 1500, 3000].forEach(function(d) { setTimeout(onReady, d); });
-
-    /* Watch for dynamic rows added after initial load */
-    if (window.MutationObserver) {
-        var obs = new MutationObserver(function() {
-            if (_ready) processRows();
-        });
-        function attachObs() {
-            var c = document.getElementById('keysContainer');
-            if (c) obs.observe(c, { childList: true });
-        }
-        attachObs();
-        document.addEventListener('DOMContentLoaded', attachObs);
-    }
 })();
